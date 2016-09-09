@@ -62,7 +62,20 @@ class LoginForm extends Model
         }
     }
 
-    /**
+	/**
+	 * form labels
+	 * @return array
+	 */
+    public function attributeLabels()
+	{
+		return [
+			'username' => '用户名',
+			'password' => '密码',
+			'rememberMe' => '下次自动登陆'
+		];
+	}
+
+	/**
      * Finds user by [[username]]
      *
      * @return User|null

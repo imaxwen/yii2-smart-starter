@@ -1,76 +1,89 @@
 <?php
+use yii\helpers\Html;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-use backend\assets\AppAsset;
-use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
-use common\widgets\Alert;
+$menuCallback = function($menu) {
+	$data = json_decode($menu['data'], true);
+	$items = $menu['children'];
+	$return = [
+		'label' => $menu['name'],
+		'url' => [$menu['route']],
+	];
+	if ($data) {
+		isset($data['visible']) && $return['visible'] = $data['visible'];
+		isset($data['icon']) && $data['icon'] && $return['icon'] = $data['icon'];
+		$return['options'] = $data;
+	}
+	(!isset($return['icon']) || !$return['icon']) && $return['icon'] = 'fa fa-circle-o';
+	$items && $return['items'] = $items;
+	return $return;
+};
 
-AppAsset::register($this);
-?>
-<?php $this->beginPage() ?>
-<!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>">
-<head>
-    <meta charset="<?= Yii::$app->charset ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?= Html::csrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
-    <?php $this->head() ?>
-</head>
-<body>
-<?php $this->beginBody() ?>
 
-<div class="wrap">
-    <?php
-    NavBar::begin([
-        'brandLabel' => 'My Company',
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    $menuItems = [
-        ['label' => 'Home', 'url' => ['/site/index']],
-    ];
-    if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+
+if (Yii::$app->controller->action->id === 'login') { 
+/**
+ * Do not use this code in your template. Remove it. 
+ * Instead, use the code  $this->layout = '//main-login'; in your controller.
+ */
+    echo $this->render(
+        'main-login',
+        ['content' => $content]
+    );
+} else {
+
+    if (class_exists('backend\assets\AppAsset')) {
+        backend\assets\AppAsset::register($this);
     } else {
-        $menuItems[] = [
-            'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-            'url' => ['/site/logout'],
-            'linkOptions' => ['data-method' => 'post']
-        ];
+        app\assets\AppAsset::register($this);
     }
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
-    ]);
-    NavBar::end();
+
+    dmstr\web\AdminLteAsset::register($this);
+
+    $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed2010/adminlte/dist');
     ?>
+    <?php $this->beginPage() ?>
+    <!DOCTYPE html>
+    <html lang="<?= Yii::$app->language ?>">
+    <head>
+        <meta charset="<?= Yii::$app->charset ?>"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <?= Html::csrfMetaTags() ?>
+        <title><?= Html::encode($this->title) ?></title>
+        <?php $this->head() ?>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    </head>
+    <body class="hold-transition skin-red sidebar-mini">
+    <?php $this->beginBody() ?>
+    <div class="wrapper">
 
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= Alert::widget() ?>
-        <?= $content ?>
+        <?= $this->render(
+            'header.php',
+            ['directoryAsset' => $directoryAsset, 'callBack' => $menuCallback]
+        ) ?>
+
+        <?= $this->render(
+            'left.php',
+            ['directoryAsset' => $directoryAsset, 'callBack' => $menuCallback]
+        )
+        ?>
+
+        <?= $this->render(
+            'content.php',
+            ['content' => $content, 'directoryAsset' => $directoryAsset]
+        ) ?>
+
     </div>
-</div>
 
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
-    </div>
-</footer>
-
-<?php $this->endBody() ?>
-</body>
-</html>
-<?php $this->endPage() ?>
+    <?php $this->endBody() ?>
+    </body>
+    </html>
+    <?php $this->endPage() ?>
+<?php } ?>

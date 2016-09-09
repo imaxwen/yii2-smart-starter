@@ -57,4 +57,40 @@ return array (
       '@yii/gii' => $vendorDir . '/yiisoft/yii2-gii',
     ),
   ),
+  'rmrevin/yii2-fontawesome' => 
+  array (
+    'name' => 'rmrevin/yii2-fontawesome',
+    'version' => '2.16.1.0',
+    'alias' => 
+    array (
+      '@rmrevin/yii/fontawesome' => $vendorDir . '/rmrevin/yii2-fontawesome',
+    ),
+  ),
+  'mdmsoft/yii2-admin' => 
+  array (
+    'name' => 'mdmsoft/yii2-admin',
+    'version' => '2.7.0.0',
+    'alias' => 
+    array (
+      '@mdm/admin' => $vendorDir . '/mdmsoft/yii2-admin',
+    ),
+  ),
+  'cebe/yii2-gravatar' => 
+  array (
+    'name' => 'cebe/yii2-gravatar',
+    'version' => '1.1.0.0',
+    'alias' => 
+    array (
+      '@cebe/gravatar' => $vendorDir . '/cebe/yii2-gravatar/cebe/gravatar',
+    ),
+  ),
+  'dmstr/yii2-adminlte-asset' => 
+  array (
+    'name' => 'dmstr/yii2-adminlte-asset',
+    'version' => '2.3.3.0',
+    'alias' => 
+    array (
+      '@dmstr' => $vendorDir . '/dmstr/yii2-adminlte-asset',
+    ),
+  ),
 );

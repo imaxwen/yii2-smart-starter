@@ -23,6 +23,18 @@ class ComposerStaticInit81891241cee9015189fbe28578777923
             'yii\\bootstrap\\' => 14,
             'yii\\' => 4,
         ),
+        'r' => 
+        array (
+            'rmrevin\\yii\\fontawesome\\' => 24,
+        ),
+        'm' => 
+        array (
+            'mdm\\admin\\' => 10,
+        ),
+        'd' => 
+        array (
+            'dmstr\\' => 6,
+        ),
         'c' => 
         array (
             'cebe\\markdown\\' => 14,
@@ -66,6 +78,18 @@ class ComposerStaticInit81891241cee9015189fbe28578777923
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
         ),
+        'rmrevin\\yii\\fontawesome\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rmrevin/yii2-fontawesome',
+        ),
+        'mdm\\admin\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mdmsoft/yii2-admin',
+        ),
+        'dmstr\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dmstr/yii2-adminlte-asset',
+        ),
         'cebe\\markdown\\' => 
         array (
             0 => __DIR__ . '/..' . '/cebe/markdown',
@@ -77,6 +101,13 @@ class ComposerStaticInit81891241cee9015189fbe28578777923
     );
 
     public static $prefixesPsr0 = array (
+        'c' => 
+        array (
+            'cebe\\gravatar\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/cebe/yii2-gravatar',
+            ),
+        ),
         'H' => 
         array (
             'HTMLPurifier' => 

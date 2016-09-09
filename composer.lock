@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "94fcbba3238e51f6b6ec87d8d06e0520",
-    "content-hash": "b5d51a0159c513ccc36b90f0f24d8b80",
+    "hash": "394cbd81eb69fd4aaf5530d3847aafbe",
+    "content-hash": "53f80f17cb922db64a6f780f458e509b",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -296,6 +296,109 @@
             "time": "2015-03-06 05:28:07"
         },
         {
+            "name": "cebe/yii2-gravatar",
+            "version": "1.1",
+            "target-dir": "cebe/gravatar",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cebe/yii2-gravatar.git",
+                "reference": "c9c01bd14c9bdee9e5ae1ef1aad23f80c182c057"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cebe/yii2-gravatar/zipball/c9c01bd14c9bdee9e5ae1ef1aad23f80c182c057",
+                "reference": "c9c01bd14c9bdee9e5ae1ef1aad23f80c182c057",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-0": {
+                    "cebe\\gravatar\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Carsten Brandt",
+                    "email": "mail@cebe.cc",
+                    "homepage": "http://cebe.cc/",
+                    "role": "Core framework development"
+                }
+            ],
+            "description": "Gravatar Widget for Yii 2",
+            "keywords": [
+                "gravatar",
+                "yii"
+            ],
+            "time": "2013-12-10 17:49:58"
+        },
+        {
+            "name": "dmstr/yii2-adminlte-asset",
+            "version": "2.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dmstr/yii2-adminlte-asset.git",
+                "reference": "a1330f2f678d66d8ce2f8acb6fb9ce60a4614c60"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/a1330f2f678d66d8ce2f8acb6fb9ce60a4614c60",
+                "reference": "a1330f2f678d66d8ce2f8acb6fb9ce60a4614c60",
+                "shasum": ""
+            },
+            "require": {
+                "almasaeed2010/adminlte": "~2.0",
+                "cebe/yii2-gravatar": "1.*",
+                "rmrevin/yii2-fontawesome": "~2.9",
+                "yiisoft/yii2": "2.*",
+                "yiisoft/yii2-bootstrap": "2.*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "dmstr\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "tobias@diemeisterei.de"
+                },
+                {
+                    "name": "Evgeniy Tkachenko",
+                    "email": "et.coder@gmail.com"
+                }
+            ],
+            "description": "AdminLTE backend theme asset bundle for Yii 2.0 Framework",
+            "keywords": [
+                "AdminLTE",
+                "admin",
+                "asset",
+                "backend",
+                "css",
+                "extension",
+                "less",
+                "theme",
+                "yii2"
+            ],
+            "time": "2016-07-28 03:57:05"
+        },
+        {
             "name": "ezyang/htmlpurifier",
             "version": "v4.8.0",
             "source": {
@@ -338,6 +441,115 @@
                 "html"
             ],
             "time": "2016-07-16 12:58:58"
+        },
+        {
+            "name": "mdmsoft/yii2-admin",
+            "version": "2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mdmsoft/yii2-admin.git",
+                "reference": "f1711779ea3c19e334d9774d223a9682e693b31e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mdmsoft/yii2-admin/zipball/f1711779ea3c19e334d9774d223a9682e693b31e",
+                "reference": "f1711779ea3c19e334d9774d223a9682e693b31e",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.7"
+            },
+            "require-dev": {
+                "yiisoft/yii2-codeception": "~2.0"
+            },
+            "suggest": {
+                "yiisoft/yii2-bootstrap": "Used when using layout 'left-menu', 'right-menu' or 'top-menu'"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.0.master": "1.0.x-dev",
+                    "dev-master": "2.x-dev"
+                },
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "mdm\\admin\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Misbahul Munir",
+                    "email": "misbahuldmunir@gmail.com"
+                }
+            ],
+            "description": "RBAC Auth manager for Yii2 ",
+            "keywords": [
+                "admin",
+                "auth",
+                "rbac",
+                "yii"
+            ],
+            "time": "2016-05-20 23:38:13"
+        },
+        {
+            "name": "rmrevin/yii2-fontawesome",
+            "version": "2.16.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rmrevin/yii2-fontawesome.git",
+                "reference": "ab08282b8cd05c570634926f41c868cf902981e7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/ab08282b8cd05c570634926f41c868cf902981e7",
+                "reference": "ab08282b8cd05c570634926f41c868cf902981e7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "2.0.*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "rmrevin\\yii\\fontawesome\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Revin Roman",
+                    "email": "roman@rmrevin.com",
+                    "homepage": "https://rmrevin.com/"
+                }
+            ],
+            "description": "Asset Bundle for Yii2 with Font Awesome",
+            "keywords": [
+                "asset",
+                "awesome",
+                "bundle",
+                "font",
+                "yii"
+            ],
+            "time": "2016-08-31 12:41:25"
         },
         {
             "name": "swiftmailer/swiftmailer",
