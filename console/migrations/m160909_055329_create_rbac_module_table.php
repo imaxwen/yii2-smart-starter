@@ -13,6 +13,7 @@ class m160909_055329_create_rbac_module_table extends Migration
     public function up()
     {
     	$sql = file_get_contents(__DIR__ . '/rbac-schema-mysql.sql');
+		$sql = str_replace('{{tablePrefix}}', Yii::$app->db->tablePrefix, $sql);
         $this->execute($sql);
     }
 

@@ -20,36 +20,36 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
-# Dump of table yii_auth_assignment
+# Dump of table {{tablePrefix}}auth_assignment
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `yii_auth_assignment`;
+DROP TABLE IF EXISTS `{{tablePrefix}}auth_assignment`;
 
-CREATE TABLE `yii_auth_assignment` (
+CREATE TABLE `{{tablePrefix}}auth_assignment` (
   `item_name` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
   `user_id` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
   `created_at` int(11) DEFAULT NULL,
   PRIMARY KEY (`item_name`,`user_id`),
-  CONSTRAINT `yii_auth_assignment_ibfk_1` FOREIGN KEY (`item_name`) REFERENCES `yii_auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT `{{tablePrefix}}auth_assignment_ibfk_1` FOREIGN KEY (`item_name`) REFERENCES `{{tablePrefix}}auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-LOCK TABLES `yii_auth_assignment` WRITE;
-/*!40000 ALTER TABLE `yii_auth_assignment` DISABLE KEYS */;
+LOCK TABLES `{{tablePrefix}}auth_assignment` WRITE;
+/*!40000 ALTER TABLE `{{tablePrefix}}auth_assignment` DISABLE KEYS */;
 
-INSERT INTO `yii_auth_assignment` (`item_name`, `user_id`, `created_at`)
+INSERT INTO `{{tablePrefix}}auth_assignment` (`item_name`, `user_id`, `created_at`)
 VALUES
 	('超级管理员','2',1473239157);
 
-/*!40000 ALTER TABLE `yii_auth_assignment` ENABLE KEYS */;
+/*!40000 ALTER TABLE `{{tablePrefix}}auth_assignment` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
-# Dump of table yii_auth_item
+# Dump of table {{tablePrefix}}auth_item
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `yii_auth_item`;
+DROP TABLE IF EXISTS `{{tablePrefix}}auth_item`;
 
-CREATE TABLE `yii_auth_item` (
+CREATE TABLE `{{tablePrefix}}auth_item` (
   `name` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
   `type` int(11) NOT NULL,
   `description` text COLLATE utf8_unicode_ci,
@@ -60,13 +60,13 @@ CREATE TABLE `yii_auth_item` (
   PRIMARY KEY (`name`),
   KEY `rule_name` (`rule_name`),
   KEY `idx-auth_item-type` (`type`),
-  CONSTRAINT `yii_auth_item_ibfk_1` FOREIGN KEY (`rule_name`) REFERENCES `yii_auth_rule` (`name`) ON DELETE SET NULL ON UPDATE CASCADE
+  CONSTRAINT `{{tablePrefix}}auth_item_ibfk_1` FOREIGN KEY (`rule_name`) REFERENCES `{{tablePrefix}}auth_rule` (`name`) ON DELETE SET NULL ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-LOCK TABLES `yii_auth_item` WRITE;
-/*!40000 ALTER TABLE `yii_auth_item` DISABLE KEYS */;
+LOCK TABLES `{{tablePrefix}}auth_item` WRITE;
+/*!40000 ALTER TABLE `{{tablePrefix}}auth_item` DISABLE KEYS */;
 
-INSERT INTO `yii_auth_item` (`name`, `type`, `description`, `rule_name`, `data`, `created_at`, `updated_at`)
+INSERT INTO `{{tablePrefix}}auth_item` (`name`, `type`, `description`, `rule_name`, `data`, `created_at`, `updated_at`)
 VALUES
 	('/*',2,NULL,NULL,NULL,1473238434,1473238434),
 	('/auth/*',2,NULL,NULL,NULL,1473238434,1473238434),
@@ -145,28 +145,28 @@ VALUES
 	('权限管理',2,'Rbac system management',NULL,NULL,1473238683,1473238683),
 	('超级管理员',1,'super administrator',NULL,NULL,1473238527,1473238739);
 
-/*!40000 ALTER TABLE `yii_auth_item` ENABLE KEYS */;
+/*!40000 ALTER TABLE `{{tablePrefix}}auth_item` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
-# Dump of table yii_auth_item_child
+# Dump of table {{tablePrefix}}auth_item_child
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `yii_auth_item_child`;
+DROP TABLE IF EXISTS `{{tablePrefix}}auth_item_child`;
 
-CREATE TABLE `yii_auth_item_child` (
+CREATE TABLE `{{tablePrefix}}auth_item_child` (
   `parent` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
   `child` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`parent`,`child`),
   KEY `child` (`child`),
-  CONSTRAINT `yii_auth_item_child_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `yii_auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `yii_auth_item_child_ibfk_2` FOREIGN KEY (`child`) REFERENCES `yii_auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT `{{tablePrefix}}auth_item_child_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `{{tablePrefix}}auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `{{tablePrefix}}auth_item_child_ibfk_2` FOREIGN KEY (`child`) REFERENCES `{{tablePrefix}}auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-LOCK TABLES `yii_auth_item_child` WRITE;
-/*!40000 ALTER TABLE `yii_auth_item_child` DISABLE KEYS */;
+LOCK TABLES `{{tablePrefix}}auth_item_child` WRITE;
+/*!40000 ALTER TABLE `{{tablePrefix}}auth_item_child` DISABLE KEYS */;
 
-INSERT INTO `yii_auth_item_child` (`parent`, `child`)
+INSERT INTO `{{tablePrefix}}auth_item_child` (`parent`, `child`)
 VALUES
 	('权限管理','/auth/*'),
 	('权限管理','/auth/assignment/*'),
@@ -231,16 +231,16 @@ VALUES
 	('超级管理员','Gii组件'),
 	('超级管理员','权限管理');
 
-/*!40000 ALTER TABLE `yii_auth_item_child` ENABLE KEYS */;
+/*!40000 ALTER TABLE `{{tablePrefix}}auth_item_child` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
-# Dump of table yii_auth_menu
+# Dump of table {{tablePrefix}}auth_menu
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `yii_auth_menu`;
+DROP TABLE IF EXISTS `{{tablePrefix}}auth_menu`;
 
-CREATE TABLE `yii_auth_menu` (
+CREATE TABLE `{{tablePrefix}}auth_menu` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(128) NOT NULL,
   `parent` int(11) DEFAULT NULL,
@@ -249,13 +249,13 @@ CREATE TABLE `yii_auth_menu` (
   `data` blob,
   PRIMARY KEY (`id`),
   KEY `parent` (`parent`),
-  CONSTRAINT `yii_auth_menu_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `yii_auth_menu` (`id`) ON DELETE SET NULL ON UPDATE CASCADE
+  CONSTRAINT `{{tablePrefix}}auth_menu_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `{{tablePrefix}}auth_menu` (`id`) ON DELETE SET NULL ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOCK TABLES `yii_auth_menu` WRITE;
-/*!40000 ALTER TABLE `yii_auth_menu` DISABLE KEYS */;
+LOCK TABLES `{{tablePrefix}}auth_menu` WRITE;
+/*!40000 ALTER TABLE `{{tablePrefix}}auth_menu` DISABLE KEYS */;
 
-INSERT INTO `yii_auth_menu` (`id`, `name`, `parent`, `route`, `order`, `data`)
+INSERT INTO `{{tablePrefix}}auth_menu` (`id`, `name`, `parent`, `route`, `order`, `data`)
 VALUES
 	(4,'权限管理',10,'/auth/default/index',100,NULL),
 	(5,'系统路由',4,'/auth/route/index',1,NULL),
@@ -266,16 +266,16 @@ VALUES
 	(10,'系统设置',NULL,'/auth/default/index',100,X'7B2269636F6E223A202266612066612D6765617273222C202276697369626C65223A20747275657D'),
 	(11,'后台管理员',10,'/auth/user/index',NULL,NULL);
 
-/*!40000 ALTER TABLE `yii_auth_menu` ENABLE KEYS */;
+/*!40000 ALTER TABLE `{{tablePrefix}}auth_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
-# Dump of table yii_auth_rule
+# Dump of table {{tablePrefix}}auth_rule
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `yii_auth_rule`;
+DROP TABLE IF EXISTS `{{tablePrefix}}auth_rule`;
 
-CREATE TABLE `yii_auth_rule` (
+CREATE TABLE `{{tablePrefix}}auth_rule` (
   `name` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
   `data` text COLLATE utf8_unicode_ci,
   `created_at` int(11) DEFAULT NULL,
@@ -285,12 +285,12 @@ CREATE TABLE `yii_auth_rule` (
 
 
 
-# Dump of table yii_auth_user
+# Dump of table {{tablePrefix}}auth_user
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `yii_auth_user`;
+DROP TABLE IF EXISTS `{{tablePrefix}}auth_user`;
 
-CREATE TABLE `yii_auth_user` (
+CREATE TABLE `{{tablePrefix}}auth_user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `auth_key` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
@@ -306,14 +306,14 @@ CREATE TABLE `yii_auth_user` (
   UNIQUE KEY `password_reset_token` (`password_reset_token`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-LOCK TABLES `yii_auth_user` WRITE;
-/*!40000 ALTER TABLE `yii_auth_user` DISABLE KEYS */;
+LOCK TABLES `{{tablePrefix}}auth_user` WRITE;
+/*!40000 ALTER TABLE `{{tablePrefix}}auth_user` DISABLE KEYS */;
 
-INSERT INTO `yii_auth_user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`)
+INSERT INTO `{{tablePrefix}}auth_user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`)
 VALUES
 	(1,'admin','qI6gaefFxh8J5euTaIJJ4aJZ2F8cfzCx','$2y$13$AxYOaSSdU088BWfGkQQRUOCTPfqc.LR3dDeZicstp0F1z2a8FQCu6',NULL,'1max.wen@qq.com',10,1473215182,1473215182);
 
-/*!40000 ALTER TABLE `yii_auth_user` ENABLE KEYS */;
+/*!40000 ALTER TABLE `{{tablePrefix}}auth_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
