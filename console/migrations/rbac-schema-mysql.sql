@@ -311,7 +311,7 @@ LOCK TABLES `{{tablePrefix}}auth_user` WRITE;
 
 INSERT INTO `{{tablePrefix}}auth_user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`)
 VALUES
-	(1,'admin','qI6gaefFxh8J5euTaIJJ4aJZ2F8cfzCx','$2y$13$AxYOaSSdU088BWfGkQQRUOCTPfqc.LR3dDeZicstp0F1z2a8FQCu6',NULL,'1max.wen@qq.com',10,1473215182,1473215182);
+	(2,'admin','qI6gaefFxh8J5euTaIJJ4aJZ2F8cfzCx','$2y$13$AxYOaSSdU088BWfGkQQRUOCTPfqc.LR3dDeZicstp0F1z2a8FQCu6',NULL,'1max.wen@qq.com',10,1473215182,1473215182);
 
 /*!40000 ALTER TABLE `{{tablePrefix}}auth_user` ENABLE KEYS */;
 UNLOCK TABLES;
