@@ -19,7 +19,7 @@ echo "<?php\n";
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
-use backend\widgets\Box;
+use insolita\wgadminlte\Box;
 
 /* @var $this yii\web\View */
 /* @var $model <?= ltrim($generator->modelClass, '\\') ?> */

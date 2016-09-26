@@ -41,5 +41,11 @@ return [
 				],
 			],
 		],
+		'formatter' => [
+			'datetimeFormat' => 'yyyy-MM-dd HH:mm',
+			'decimalSeparator' => ',',
+			'thousandSeparator' => ' ',
+			'currencyCode' => 'CNY',
+		],
     ],
 ];

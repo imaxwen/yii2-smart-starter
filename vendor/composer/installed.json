@@ -1189,5 +1189,413 @@
             "theme",
             "yii2"
         ]
+    },
+    {
+        "name": "bower-asset/jquery-cookie",
+        "version": "v1.4.1",
+        "version_normalized": "1.4.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/carhartl/jquery-cookie.git",
+            "reference": "7f88a4e631aba8a8c688fd8999ce6b9bcfd50718"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/carhartl/jquery-cookie/zipball/7f88a4e631aba8a8c688fd8999ce6b9bcfd50718",
+            "reference": "7f88a4e631aba8a8c688fd8999ce6b9bcfd50718",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/jquery": ">=1.2"
+        },
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": [
+                "./jquery.cookie.js"
+            ],
+            "bower-asset-ignore": [
+                "test",
+                ".*",
+                "*.json",
+                "*.md",
+                "*.txt",
+                "Gruntfile.js"
+            ]
+        },
+        "installation-source": "dist"
+    },
+    {
+        "name": "insolita/yii2-adminlte-widgets",
+        "version": "v1.1.6",
+        "version_normalized": "1.1.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Insolita/yii2-adminlte-widgets.git",
+            "reference": "a4e292e0aea1427ef769ab8c5ee09d8846f214b5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Insolita/yii2-adminlte-widgets/zipball/a4e292e0aea1427ef769ab8c5ee09d8846f214b5",
+            "reference": "a4e292e0aea1427ef769ab8c5ee09d8846f214b5",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/jquery-cookie": "~1.4.1",
+            "yiisoft/yii2": "*"
+        },
+        "time": "2016-06-02 20:58:50",
+        "type": "yii2-extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "insolita\\wgadminlte\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "insolita",
+                "email": "donnainsolita@gmail.com"
+            }
+        ],
+        "description": "Widgets for AdminLTE theme (Box with remember collapse state, Timeline, Tile, Callout, SmallBox etc)",
+        "keywords": [
+            "AdminLTE",
+            "widget",
+            "yii2"
+        ]
+    },
+    {
+        "name": "bower-asset/blueimp-canvas-to-blob",
+        "version": "v3.3.0",
+        "version_normalized": "3.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/blueimp/JavaScript-Canvas-to-Blob.git",
+            "reference": "cb5add6fd18abba567c4824a601f57b9a9e30e04"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/blueimp/JavaScript-Canvas-to-Blob/zipball/cb5add6fd18abba567c4824a601f57b9a9e30e04",
+            "reference": "cb5add6fd18abba567c4824a601f57b9a9e30e04",
+            "shasum": ""
+        },
+        "type": "bower-asset-library",
+        "installation-source": "dist"
+    },
+    {
+        "name": "bower-asset/blueimp-load-image",
+        "version": "v2.6.2",
+        "version_normalized": "2.6.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/blueimp/JavaScript-Load-Image.git",
+            "reference": "5cae749216b942ae663a0daabf5dfde4afeaa355"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/blueimp/JavaScript-Load-Image/zipball/5cae749216b942ae663a0daabf5dfde4afeaa355",
+            "reference": "5cae749216b942ae663a0daabf5dfde4afeaa355",
+            "shasum": ""
+        },
+        "type": "bower-asset-library",
+        "installation-source": "dist"
+    },
+    {
+        "name": "bower-asset/blueimp-tmpl",
+        "version": "v3.4.0",
+        "version_normalized": "3.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/blueimp/JavaScript-Templates.git",
+            "reference": "9dc414739a4d23663018575c5036b88e0de2ba4d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/blueimp/JavaScript-Templates/zipball/9dc414739a4d23663018575c5036b88e0de2ba4d",
+            "reference": "9dc414739a4d23663018575c5036b88e0de2ba4d",
+            "shasum": ""
+        },
+        "type": "bower-asset-library",
+        "installation-source": "dist"
+    },
+    {
+        "name": "bower-asset/blueimp-file-upload",
+        "version": "9.12.5",
+        "version_normalized": "9.12.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/blueimp/jQuery-File-Upload.git",
+            "reference": "b9e144b735ab95a598b975bdc8375e14a2e76157"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/blueimp/jQuery-File-Upload/zipball/b9e144b735ab95a598b975bdc8375e14a2e76157",
+            "reference": "b9e144b735ab95a598b975bdc8375e14a2e76157",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/blueimp-canvas-to-blob": ">=2.1.1",
+            "bower-asset/blueimp-load-image": ">=1.13.0",
+            "bower-asset/blueimp-tmpl": ">=2.5.4",
+            "bower-asset/jquery": ">=1.6"
+        },
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": [
+                "js/jquery.fileupload.js"
+            ],
+            "bower-asset-ignore": [
+                "/*.*",
+                "/cors",
+                "css/demo-ie8.css",
+                "css/demo.css",
+                "css/style.css",
+                "js/app.js",
+                "js/main.js",
+                "server",
+                "test"
+            ]
+        },
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "description": "File Upload widget with multiple file selection, drag&amp;drop support, progress bar, validation and preview images.",
+        "keywords": [
+            "bootstrap",
+            "chunk",
+            "cross-domain",
+            "cross-site",
+            "drag",
+            "drop",
+            "file",
+            "gae",
+            "go",
+            "jquery",
+            "multiple",
+            "php",
+            "preview",
+            "progress",
+            "python",
+            "resume",
+            "selection",
+            "upload",
+            "widget"
+        ]
+    },
+    {
+        "name": "bower-asset/blueimp-gallery",
+        "version": "v2.17.0",
+        "version_normalized": "2.17.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/blueimp/Gallery.git",
+            "reference": "8336bb5934cb623608808601129db3fbf9201a09"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/blueimp/Gallery/zipball/8336bb5934cb623608808601129db3fbf9201a09",
+            "reference": "8336bb5934cb623608808601129db3fbf9201a09",
+            "shasum": ""
+        },
+        "type": "bower-asset-library",
+        "installation-source": "dist"
+    },
+    {
+        "name": "2amigos/yii2-gallery-widget",
+        "version": "1.0.3",
+        "version_normalized": "1.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/2amigos/yii2-gallery-widget.git",
+            "reference": "e9b3b0819385bf905e64f017c16be197fec81e99"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/2amigos/yii2-gallery-widget/zipball/e9b3b0819385bf905e64f017c16be197fec81e99",
+            "reference": "e9b3b0819385bf905e64f017c16be197fec81e99",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/blueimp-gallery": "~2.17.0",
+            "yiisoft/yii2": "~2.0.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0",
+            "scrutinizer/ocular": "~1.1"
+        },
+        "time": "2016-09-10 19:18:19",
+        "type": "yii2-extension",
+        "extra": {
+            "asset-installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            },
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "dosamigos\\gallery\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "2amigOS! Consulting Group",
+                "email": "hola@2amigos.us",
+                "homepage": "http://2amigos.us",
+                "role": "Developer"
+            }
+        ],
+        "description": "Blueimp gallery widget for the Yii framework",
+        "homepage": "https://github.com/2amigos/yii2-gallery-widget",
+        "keywords": [
+            "2amigos",
+            "gallery",
+            "widget",
+            "yii",
+            "yii 2",
+            "yii2"
+        ]
+    },
+    {
+        "name": "2amigos/yii2-file-upload-widget",
+        "version": "1.0.5",
+        "version_normalized": "1.0.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/2amigos/yii2-file-upload-widget.git",
+            "reference": "691d222dd01c642562bbe25cdb4182217e43a6f2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/2amigos/yii2-file-upload-widget/zipball/691d222dd01c642562bbe25cdb4182217e43a6f2",
+            "reference": "691d222dd01c642562bbe25cdb4182217e43a6f2",
+            "shasum": ""
+        },
+        "require": {
+            "2amigos/yii2-gallery-widget": "~1.0",
+            "bower-asset/blueimp-file-upload": "~9.9",
+            "yiisoft/yii2": "~2.0.0",
+            "yiisoft/yii2-bootstrap": "~2.0.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0"
+        },
+        "time": "2016-09-10 19:10:31",
+        "type": "yii2-extension",
+        "extra": {
+            "asset-installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            },
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "dosamigos\\fileupload\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "2amigOS! Consulting Group",
+                "email": "hola@2amigos.us",
+                "homepage": "http://2amigos.us",
+                "role": "Developer"
+            },
+            {
+                "name": "Alexander Kochetov",
+                "email": "creocoder@gmail.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Blueimp file upload widget for the Yii framework",
+        "homepage": "https://github.com/2amigos/yii2-file-upload-widget",
+        "keywords": [
+            "2amigos",
+            "upload",
+            "widget",
+            "yii",
+            "yii 2",
+            "yii2"
+        ]
+    },
+    {
+        "name": "2amigos/yii2-ckeditor-widget",
+        "version": "1.0.4",
+        "version_normalized": "1.0.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/2amigos/yii2-ckeditor-widget.git",
+            "reference": "023eb29fedfc3c3121c17688ed237e8688f5eb50"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/2amigos/yii2-ckeditor-widget/zipball/023eb29fedfc3c3121c17688ed237e8688f5eb50",
+            "reference": "023eb29fedfc3c3121c17688ed237e8688f5eb50",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2": "~2.0.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.*"
+        },
+        "time": "2015-04-30 12:22:25",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            },
+            "asset-installer-paths": {
+                "bower-asset-library": "vendor/bower"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "dosamigos\\ckeditor\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "2amigOS! Consulting Group",
+                "email": "hola@2amigos.us",
+                "homepage": "http://2amigos.us",
+                "role": "Developer"
+            }
+        ],
+        "description": "CKEditor widget for Yii2.",
+        "homepage": "http://yiiwheels.com/extension/ckeditor-widget",
+        "keywords": [
+            "2amigos",
+            "CKEditor",
+            "extension",
+            "widget",
+            "yii",
+            "yii 2",
+            "yii2"
+        ]
     }
 ]

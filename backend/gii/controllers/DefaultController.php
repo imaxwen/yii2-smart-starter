@@ -10,11 +10,11 @@ use yii\gii\controllers\DefaultController as GiiController;
  */
 class DefaultController extends GiiController
 {
-//    public $layout = '@backend/views/layouts/main';
-
+	/**
+	 * @return string
+	 */
     public function actionIndex()
     {
-		$this->layout = 'main';
         return $this->render('index');
     }
 }

@@ -93,4 +93,40 @@ return array (
       '@dmstr' => $vendorDir . '/dmstr/yii2-adminlte-asset',
     ),
   ),
+  'insolita/yii2-adminlte-widgets' => 
+  array (
+    'name' => 'insolita/yii2-adminlte-widgets',
+    'version' => '1.1.6.0',
+    'alias' => 
+    array (
+      '@insolita/wgadminlte' => $vendorDir . '/insolita/yii2-adminlte-widgets',
+    ),
+  ),
+  '2amigos/yii2-gallery-widget' => 
+  array (
+    'name' => '2amigos/yii2-gallery-widget',
+    'version' => '1.0.3.0',
+    'alias' => 
+    array (
+      '@dosamigos/gallery' => $vendorDir . '/2amigos/yii2-gallery-widget/src',
+    ),
+  ),
+  '2amigos/yii2-file-upload-widget' => 
+  array (
+    'name' => '2amigos/yii2-file-upload-widget',
+    'version' => '1.0.5.0',
+    'alias' => 
+    array (
+      '@dosamigos/fileupload' => $vendorDir . '/2amigos/yii2-file-upload-widget/src',
+    ),
+  ),
+  '2amigos/yii2-ckeditor-widget' => 
+  array (
+    'name' => '2amigos/yii2-ckeditor-widget',
+    'version' => '1.0.4.0',
+    'alias' => 
+    array (
+      '@dosamigos/ckeditor' => $vendorDir . '/2amigos/yii2-ckeditor-widget/src',
+    ),
+  ),
 );

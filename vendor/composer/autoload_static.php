@@ -31,8 +31,15 @@ class ComposerStaticInit81891241cee9015189fbe28578777923
         array (
             'mdm\\admin\\' => 10,
         ),
+        'i' => 
+        array (
+            'insolita\\wgadminlte\\' => 20,
+        ),
         'd' => 
         array (
+            'dosamigos\\gallery\\' => 18,
+            'dosamigos\\fileupload\\' => 21,
+            'dosamigos\\ckeditor\\' => 19,
             'dmstr\\' => 6,
         ),
         'c' => 
@@ -85,6 +92,22 @@ class ComposerStaticInit81891241cee9015189fbe28578777923
         'mdm\\admin\\' => 
         array (
             0 => __DIR__ . '/..' . '/mdmsoft/yii2-admin',
+        ),
+        'insolita\\wgadminlte\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/insolita/yii2-adminlte-widgets',
+        ),
+        'dosamigos\\gallery\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/2amigos/yii2-gallery-widget/src',
+        ),
+        'dosamigos\\fileupload\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/2amigos/yii2-file-upload-widget/src',
+        ),
+        'dosamigos\\ckeditor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/2amigos/yii2-ckeditor-widget/src',
         ),
         'dmstr\\' => 
         array (

@@ -14,7 +14,7 @@ echo "<?php\n";
 
 use yii\helpers\Html;
 use <?= $generator->indexWidgetType === 'grid' ? "backend\\widgets\\GridView" : "yii\\widgets\\ListView" ?>;
-use backend\widgets\Box;
+use insolita\wgadminlte\Box;
 
 /* @var $this yii\web\View */
 <?= !empty($generator->searchModelClass) ? "/* @var \$searchModel " . ltrim($generator->searchModelClass, '\\') . " */\n" : '' ?>
@@ -27,24 +27,23 @@ $this->params['breadcrumbs'][] = $this->title;
 	<div class="col-xs-12">
 <?= "<?php \n" ?>
 	Box::begin([
-		'title' => '<i class="fa fa-list"></i> '.Html::encode($this->title),
-		'type'  => Box::TYPE_DEFAULT,
-		// 'solid'=> false,  # solide box-header
-		// 'collapse'=> true,
-		// 'tooltip' => 'tooltip text',
-		// 'footer'  => 'footer',
-	]);
+		'title'    => '<i class="fa fa-list"></i> '.Html::encode($this->title),
+		'type'     => Box::TYPE_DEFAULT,
+		// 'solid'    => true,
+		// 'tooltip'  => 'tooltip',
+		// 'footer'   => 'this is footer',
+		'collapse' => false,
+		'left_tools'=> Html::a(<?= $generator->generateString(Yii::t('app', 'Create') . Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>, ['create'], ['class' => 'btn btn-success btn-sm'])
+		]);
 <?= '?>' ?>
-
-		<div class="row show-grid">
-			<div class="col-xs-12"><?= "<?= " ?>Html::a(<?= $generator->generateString(Yii::t('app', 'Create') . Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>, ['create'], ['class' => 'btn btn-success pull-right']) ?></div>
-		</div>
 
 <?php if(!empty($generator->searchModelClass)): ?>
 <?= "    <?php " . ($generator->indexWidgetType === 'grid' ? "// " : "") ?>echo $this->render('_search', ['model' => $searchModel]); ?>
 <?php endif; ?>
 
 <?php if ($generator->indexWidgetType === 'grid'): ?>
+	<div class="row">
+		<div class="col-sm-12">
     <?= "<?= " ?>GridView::widget([
         'dataProvider' => $dataProvider,
 		'layout'  => "{items}\n{summary}{pager}",
@@ -75,7 +74,7 @@ if (($tableSchema = $generator->getTableSchema()) === false) {
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
-		'tableOptions' => ['class' => 'table table-striped table-bordered table-hover'],
+		'tableOptions' => ['class' => 'table table-striped table-bordered table-hover dataTable'],
     ]); ?>
 <?php else: ?>
     <?= "<?= " ?>ListView::widget([
@@ -86,6 +85,8 @@ if (($tableSchema = $generator->getTableSchema()) === false) {
         },
     ]) ?>
 <?php endif; ?>
+		</div>
+	</div>
 <?= '<?php' ?> Box::end();<?= "?>\n" ?>
 	</div>
 </div>
