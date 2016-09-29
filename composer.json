@@ -24,7 +24,8 @@
         "dmstr/yii2-adminlte-asset": "2.*",
         "insolita/yii2-adminlte-widgets": "~1.1",
         "2amigos/yii2-file-upload-widget": "~1.0",
-        "2amigos/yii2-ckeditor-widget": "^1.0"
+        "2amigos/yii2-ckeditor-widget": "^1.0",
+        "maxwen/yii2-curl": "^1.0"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

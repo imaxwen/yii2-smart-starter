@@ -1597,5 +1597,50 @@
             "yii 2",
             "yii2"
         ]
+    },
+    {
+        "name": "maxwen/yii2-curl",
+        "version": "1.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/max-wen/yii2-curl.git",
+            "reference": "87b756d99593a0ef01fdb2019e0ac8ec9808612e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/max-wen/yii2-curl/zipball/87b756d99593a0ef01fdb2019e0ac8ec9808612e",
+            "reference": "87b756d99593a0ef01fdb2019e0ac8ec9808612e",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "yiisoft/yii2": "*"
+        },
+        "time": "2016-01-08 02:42:49",
+        "type": "yii2-extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "maxwen\\yii\\curl\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Max Wen",
+                "email": "max.wen@qq.com"
+            }
+        ],
+        "description": "A base curl wrapper for Yii2 Framework",
+        "keywords": [
+            "curl",
+            "extension",
+            "restful",
+            "yii2"
+        ]
     }
 ]

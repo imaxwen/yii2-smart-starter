@@ -129,4 +129,13 @@ return array (
       '@dosamigos/ckeditor' => $vendorDir . '/2amigos/yii2-ckeditor-widget/src',
     ),
   ),
+  'maxwen/yii2-curl' => 
+  array (
+    'name' => 'maxwen/yii2-curl',
+    'version' => '1.0.0.0',
+    'alias' => 
+    array (
+      '@maxwen/yii/curl' => $vendorDir . '/maxwen/yii2-curl',
+    ),
+  ),
 );

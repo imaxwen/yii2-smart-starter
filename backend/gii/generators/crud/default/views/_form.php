@@ -45,7 +45,7 @@ use insolita\wgadminlte\Box;
 			'fieldConfig' => [
 				'template' => "{label}\n{beginWrapper}\n{input}\n{hint}\n{error}\n{endWrapper}",
 				'horizontalCssClasses' => [
-					'label' => 'col-sm-1',
+					'label' => 'col-sm-2',
 					// 'offset' => 'col-sm-offset-4',
 					'wrapper' => 'col-sm-6',
 					'error' => '',

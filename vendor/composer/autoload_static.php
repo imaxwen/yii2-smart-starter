@@ -30,6 +30,7 @@ class ComposerStaticInit81891241cee9015189fbe28578777923
         'm' => 
         array (
             'mdm\\admin\\' => 10,
+            'maxwen\\yii\\curl\\' => 16,
         ),
         'i' => 
         array (
@@ -92,6 +93,10 @@ class ComposerStaticInit81891241cee9015189fbe28578777923
         'mdm\\admin\\' => 
         array (
             0 => __DIR__ . '/..' . '/mdmsoft/yii2-admin',
+        ),
+        'maxwen\\yii\\curl\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/maxwen/yii2-curl',
         ),
         'insolita\\wgadminlte\\' => 
         array (
