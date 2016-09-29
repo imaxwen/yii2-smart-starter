@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/wujiang.iml" filepath="$PROJECT_DIR$/.idea/wujiang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/yii2-adminlte-rbac.iml" filepath="$PROJECT_DIR$/.idea/yii2-adminlte-rbac.iml" />
     </modules>
   </component>
 </project>
