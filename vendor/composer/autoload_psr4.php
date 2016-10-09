@@ -17,6 +17,7 @@ return array(
     'rmrevin\\yii\\fontawesome\\' => array($vendorDir . '/rmrevin/yii2-fontawesome'),
     'mdm\\admin\\' => array($vendorDir . '/mdmsoft/yii2-admin'),
     'maxwen\\yii\\curl\\' => array($vendorDir . '/maxwen/yii2-curl'),
+    'maxwen\\ckeditor\\' => array($vendorDir . '/maxwen/yii2-ckeditor-widget'),
     'insolita\\wgadminlte\\' => array($vendorDir . '/insolita/yii2-adminlte-widgets'),
     'dosamigos\\gallery\\' => array($vendorDir . '/2amigos/yii2-gallery-widget/src'),
     'dosamigos\\fileupload\\' => array($vendorDir . '/2amigos/yii2-file-upload-widget/src'),

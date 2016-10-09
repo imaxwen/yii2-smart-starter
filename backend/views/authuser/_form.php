@@ -50,6 +50,7 @@ use maxwen\ckeditor\CKEditor;
 			'rows' => 6,
 		],
 		'preset' => 'full',
+		'clientOptions' => [ 'username' => 'max.wen' ]
 
 	]) ?>
 

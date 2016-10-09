@@ -58,7 +58,8 @@ return [
 		'class' => 'mdm\admin\components\AccessControl',
 		'allowActions' => [
 			'site/*', //sites for access
-			'authuser/*'
+			'authuser/*',
+			'editor/*'
 		]
 	],
     'params' => $params,

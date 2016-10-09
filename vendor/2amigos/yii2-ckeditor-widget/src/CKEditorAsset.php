@@ -18,6 +18,7 @@ use yii\web\AssetBundle;
  */
 class CKEditorAsset extends AssetBundle
 {
+	public $sourcePath = '@bower/ckeditor';
     public $js = [
         'ckeditor.js',
         'adapters/jquery.js'
@@ -26,10 +27,4 @@ class CKEditorAsset extends AssetBundle
         'yii\web\YiiAsset',
         'yii\web\JqueryAsset'
     ];
-
-    public function init()
-    {
-        $this->sourcePath = __DIR__ . '/assets/ckeditor';
-        parent::init();
-    }
 }

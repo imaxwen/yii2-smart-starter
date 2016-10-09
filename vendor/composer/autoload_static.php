@@ -31,6 +31,7 @@ class ComposerStaticInit81891241cee9015189fbe28578777923
         array (
             'mdm\\admin\\' => 10,
             'maxwen\\yii\\curl\\' => 16,
+            'maxwen\\ckeditor\\' => 16,
         ),
         'i' => 
         array (
@@ -97,6 +98,10 @@ class ComposerStaticInit81891241cee9015189fbe28578777923
         'maxwen\\yii\\curl\\' => 
         array (
             0 => __DIR__ . '/..' . '/maxwen/yii2-curl',
+        ),
+        'maxwen\\ckeditor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/maxwen/yii2-ckeditor-widget',
         ),
         'insolita\\wgadminlte\\' => 
         array (

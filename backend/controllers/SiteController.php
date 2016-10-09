@@ -1,7 +1,6 @@
 <?php
 namespace backend\controllers;
 
-use common\models\BaseModel;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -23,7 +22,7 @@ class SiteController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['login', 'error'],
+                        'actions' => ['login', 'error', 'test'],
                         'allow' => true,
                     ],
                     [
@@ -80,4 +79,10 @@ class SiteController extends Controller
 
         return $this->goHome();
     }
+
+    public function actionTest()
+	{
+		new \maxwen\ckeditor\CKEditorWidgetAsset();
+		var_dump(class_exists(\maxwen\ckeditor\CKEditorWidgetAsset::className()));
+	}
 }

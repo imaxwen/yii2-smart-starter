@@ -21,8 +21,8 @@ return [
 
 	'Search'  => '搜索',
 	'Reset'   => '重置',
-	'Create ' => '创建',
-	'Create' => '创建',
+	'Create ' => '新增',
+	'Create' => '新增',
 	'Update ' => '更新',
 	'Update' => '更新',
 	'Delete' => '删除',

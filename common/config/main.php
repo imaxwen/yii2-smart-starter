@@ -2,6 +2,12 @@
 return [
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
 	'language' => 'zh-CN',
+	'controllerMap' => [
+		'editor' => [
+			'class'    => 'maxwen\ckeditor\controllers\EditorController',
+			'viewPath' => '@vendor/maxwen/yii2-ckeditor-widget/views/editor'
+		]
+	],
     'components' => [
         'cache' => [
             'class' => 'yii\caching\FileCache',

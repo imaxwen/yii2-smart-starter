@@ -12,15 +12,6 @@ return array (
       '@yii/faker' => $vendorDir . '/yiisoft/yii2-faker',
     ),
   ),
-  'yiisoft/yii2-swiftmailer' => 
-  array (
-    'name' => 'yiisoft/yii2-swiftmailer',
-    'version' => '2.0.5.0',
-    'alias' => 
-    array (
-      '@yii/swiftmailer' => $vendorDir . '/yiisoft/yii2-swiftmailer',
-    ),
-  ),
   'yiisoft/yii2-codeception' => 
   array (
     'name' => 'yiisoft/yii2-codeception',
@@ -111,15 +102,6 @@ return array (
       '@dosamigos/gallery' => $vendorDir . '/2amigos/yii2-gallery-widget/src',
     ),
   ),
-  '2amigos/yii2-file-upload-widget' => 
-  array (
-    'name' => '2amigos/yii2-file-upload-widget',
-    'version' => '1.0.5.0',
-    'alias' => 
-    array (
-      '@dosamigos/fileupload' => $vendorDir . '/2amigos/yii2-file-upload-widget/src',
-    ),
-  ),
   '2amigos/yii2-ckeditor-widget' => 
   array (
     'name' => '2amigos/yii2-ckeditor-widget',
@@ -136,6 +118,24 @@ return array (
     'alias' => 
     array (
       '@maxwen/yii/curl' => $vendorDir . '/maxwen/yii2-curl',
+    ),
+  ),
+  'yiisoft/yii2-swiftmailer' => 
+  array (
+    'name' => 'yiisoft/yii2-swiftmailer',
+    'version' => '2.0.6.0',
+    'alias' => 
+    array (
+      '@yii/swiftmailer' => $vendorDir . '/yiisoft/yii2-swiftmailer',
+    ),
+  ),
+  '2amigos/yii2-file-upload-widget' => 
+  array (
+    'name' => '2amigos/yii2-file-upload-widget',
+    'version' => '1.0.6.0',
+    'alias' => 
+    array (
+      '@dosamigos/fileupload' => $vendorDir . '/2amigos/yii2-file-upload-widget/src',
     ),
   ),
 );

@@ -1,67 +1,5 @@
 [
     {
-        "name": "cebe/markdown",
-        "version": "1.1.0",
-        "version_normalized": "1.1.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/cebe/markdown.git",
-            "reference": "54a2c49de31cc44e864ebf0500a35ef21d0010b2"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/cebe/markdown/zipball/54a2c49de31cc44e864ebf0500a35ef21d0010b2",
-            "reference": "54a2c49de31cc44e864ebf0500a35ef21d0010b2",
-            "shasum": ""
-        },
-        "require": {
-            "lib-pcre": "*",
-            "php": ">=5.4.0"
-        },
-        "require-dev": {
-            "cebe/indent": "*",
-            "facebook/xhprof": "*@dev",
-            "phpunit/phpunit": "4.1.*"
-        },
-        "time": "2015-03-06 05:28:07",
-        "bin": [
-            "bin/markdown"
-        ],
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.1.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "cebe\\markdown\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Carsten Brandt",
-                "email": "mail@cebe.cc",
-                "homepage": "http://cebe.cc/",
-                "role": "Creator"
-            }
-        ],
-        "description": "A super fast, highly extensible markdown parser for PHP",
-        "homepage": "https://github.com/cebe/markdown#readme",
-        "keywords": [
-            "extensible",
-            "fast",
-            "gfm",
-            "markdown",
-            "markdown-extra"
-        ]
-    },
-    {
         "name": "bower-asset/punycode",
         "version": "v1.3.2",
         "version_normalized": "1.3.2.0",
@@ -500,58 +438,6 @@
         "homepage": "http://www.yiiframework.com/",
         "keywords": [
             "framework",
-            "yii2"
-        ]
-    },
-    {
-        "name": "yiisoft/yii2-swiftmailer",
-        "version": "2.0.5",
-        "version_normalized": "2.0.5.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/yiisoft/yii2-swiftmailer.git",
-            "reference": "e2c6315caff30a9271a7afad4d684627721dc69a"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/e2c6315caff30a9271a7afad4d684627721dc69a",
-            "reference": "e2c6315caff30a9271a7afad4d684627721dc69a",
-            "shasum": ""
-        },
-        "require": {
-            "swiftmailer/swiftmailer": "~5.0",
-            "yiisoft/yii2": ">=2.0.4"
-        },
-        "time": "2016-03-17 03:58:49",
-        "type": "yii2-extension",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.0.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "yii\\swiftmailer\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Paul Klimov",
-                "email": "klimov.paul@gmail.com"
-            }
-        ],
-        "description": "The SwiftMailer integration for the Yii framework",
-        "keywords": [
-            "email",
-            "mail",
-            "mailer",
-            "swift",
-            "swiftmailer",
             "yii2"
         ]
     },
@@ -1269,60 +1155,6 @@
         ]
     },
     {
-        "name": "bower-asset/blueimp-canvas-to-blob",
-        "version": "v3.3.0",
-        "version_normalized": "3.3.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/blueimp/JavaScript-Canvas-to-Blob.git",
-            "reference": "cb5add6fd18abba567c4824a601f57b9a9e30e04"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/blueimp/JavaScript-Canvas-to-Blob/zipball/cb5add6fd18abba567c4824a601f57b9a9e30e04",
-            "reference": "cb5add6fd18abba567c4824a601f57b9a9e30e04",
-            "shasum": ""
-        },
-        "type": "bower-asset-library",
-        "installation-source": "dist"
-    },
-    {
-        "name": "bower-asset/blueimp-load-image",
-        "version": "v2.6.2",
-        "version_normalized": "2.6.2.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/blueimp/JavaScript-Load-Image.git",
-            "reference": "5cae749216b942ae663a0daabf5dfde4afeaa355"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/blueimp/JavaScript-Load-Image/zipball/5cae749216b942ae663a0daabf5dfde4afeaa355",
-            "reference": "5cae749216b942ae663a0daabf5dfde4afeaa355",
-            "shasum": ""
-        },
-        "type": "bower-asset-library",
-        "installation-source": "dist"
-    },
-    {
-        "name": "bower-asset/blueimp-tmpl",
-        "version": "v3.4.0",
-        "version_normalized": "3.4.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/blueimp/JavaScript-Templates.git",
-            "reference": "9dc414739a4d23663018575c5036b88e0de2ba4d"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/blueimp/JavaScript-Templates/zipball/9dc414739a4d23663018575c5036b88e0de2ba4d",
-            "reference": "9dc414739a4d23663018575c5036b88e0de2ba4d",
-            "shasum": ""
-        },
-        "type": "bower-asset-library",
-        "installation-source": "dist"
-    },
-    {
         "name": "bower-asset/blueimp-file-upload",
         "version": "9.12.5",
         "version_normalized": "9.12.5.0",
@@ -1469,75 +1301,6 @@
         ]
     },
     {
-        "name": "2amigos/yii2-file-upload-widget",
-        "version": "1.0.5",
-        "version_normalized": "1.0.5.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/2amigos/yii2-file-upload-widget.git",
-            "reference": "691d222dd01c642562bbe25cdb4182217e43a6f2"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/2amigos/yii2-file-upload-widget/zipball/691d222dd01c642562bbe25cdb4182217e43a6f2",
-            "reference": "691d222dd01c642562bbe25cdb4182217e43a6f2",
-            "shasum": ""
-        },
-        "require": {
-            "2amigos/yii2-gallery-widget": "~1.0",
-            "bower-asset/blueimp-file-upload": "~9.9",
-            "yiisoft/yii2": "~2.0.0",
-            "yiisoft/yii2-bootstrap": "~2.0.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "~4.0"
-        },
-        "time": "2016-09-10 19:10:31",
-        "type": "yii2-extension",
-        "extra": {
-            "asset-installer-paths": {
-                "npm-asset-library": "vendor/npm",
-                "bower-asset-library": "vendor/bower"
-            },
-            "branch-alias": {
-                "dev-master": "1.0-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "dosamigos\\fileupload\\": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "2amigOS! Consulting Group",
-                "email": "hola@2amigos.us",
-                "homepage": "http://2amigos.us",
-                "role": "Developer"
-            },
-            {
-                "name": "Alexander Kochetov",
-                "email": "creocoder@gmail.com",
-                "role": "Developer"
-            }
-        ],
-        "description": "Blueimp file upload widget for the Yii framework",
-        "homepage": "https://github.com/2amigos/yii2-file-upload-widget",
-        "keywords": [
-            "2amigos",
-            "upload",
-            "widget",
-            "yii",
-            "yii 2",
-            "yii2"
-        ]
-    },
-    {
         "name": "2amigos/yii2-ckeditor-widget",
         "version": "1.0.4",
         "version_normalized": "1.0.4.0",
@@ -1640,6 +1403,318 @@
             "curl",
             "extension",
             "restful",
+            "yii2"
+        ]
+    },
+    {
+        "name": "bower-asset/ckeditor",
+        "version": "4.5.11",
+        "version_normalized": "4.5.11.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ckeditor/ckeditor-releases.git",
+            "reference": "48155a1e1c7e84736b5a166ad3f33acea2a51255"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/48155a1e1c7e84736b5a166ad3f33acea2a51255",
+            "reference": "48155a1e1c7e84736b5a166ad3f33acea2a51255",
+            "shasum": ""
+        },
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": "./ckeditor.js"
+        },
+        "installation-source": "dist",
+        "license": [
+            "For licensing, see LICENSE.md or http://ckeditor.com/license."
+        ],
+        "description": "JavaScript WYSIWYG web text editor.",
+        "keywords": [
+            "ckeditor",
+            "editor",
+            "fckeditor",
+            "html",
+            "javascript",
+            "richtext",
+            "text",
+            "wysiwyg"
+        ]
+    },
+    {
+        "name": "maxwen/yii2-ckeditor-widget",
+        "version": "0.1.1",
+        "version_normalized": "0.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/max-wen/yii2-ckeditor-widget.git",
+            "reference": "19a57a77c50a9096a11b36316f781664ea7b99df"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/max-wen/yii2-ckeditor-widget/zipball/19a57a77c50a9096a11b36316f781664ea7b99df",
+            "reference": "19a57a77c50a9096a11b36316f781664ea7b99df",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/ckeditor": "^4.5",
+            "bower-asset/jquery-cookie": "~1.4.1",
+            "yiisoft/yii2": "~2.0.0"
+        },
+        "time": "2016-09-30 05:02:51",
+        "type": "extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "maxwen\\ckeditor\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Max Wen",
+                "email": "max.wen@qq.com"
+            }
+        ],
+        "description": "ckeditor widget for yii2 framework, with ckfinder intergrated"
+    },
+    {
+        "name": "cebe/markdown",
+        "version": "1.1.1",
+        "version_normalized": "1.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cebe/markdown.git",
+            "reference": "c30eb5e01fe021cc5bba2f9ee0eeef96d4931166"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cebe/markdown/zipball/c30eb5e01fe021cc5bba2f9ee0eeef96d4931166",
+            "reference": "c30eb5e01fe021cc5bba2f9ee0eeef96d4931166",
+            "shasum": ""
+        },
+        "require": {
+            "lib-pcre": "*",
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "cebe/indent": "*",
+            "facebook/xhprof": "*@dev",
+            "phpunit/phpunit": "4.1.*"
+        },
+        "time": "2016-09-14 20:40:20",
+        "bin": [
+            "bin/markdown"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "cebe\\markdown\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Carsten Brandt",
+                "email": "mail@cebe.cc",
+                "homepage": "http://cebe.cc/",
+                "role": "Creator"
+            }
+        ],
+        "description": "A super fast, highly extensible markdown parser for PHP",
+        "homepage": "https://github.com/cebe/markdown#readme",
+        "keywords": [
+            "extensible",
+            "fast",
+            "gfm",
+            "markdown",
+            "markdown-extra"
+        ]
+    },
+    {
+        "name": "yiisoft/yii2-swiftmailer",
+        "version": "2.0.6",
+        "version_normalized": "2.0.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-swiftmailer.git",
+            "reference": "26b900767f1031ff3a4668dfa36c10595875f0a5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/26b900767f1031ff3a4668dfa36c10595875f0a5",
+            "reference": "26b900767f1031ff3a4668dfa36c10595875f0a5",
+            "shasum": ""
+        },
+        "require": {
+            "swiftmailer/swiftmailer": "~5.0",
+            "yiisoft/yii2": "~2.0.4"
+        },
+        "time": "2016-09-09 11:48:11",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\swiftmailer\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Paul Klimov",
+                "email": "klimov.paul@gmail.com"
+            }
+        ],
+        "description": "The SwiftMailer integration for the Yii framework",
+        "keywords": [
+            "email",
+            "mail",
+            "mailer",
+            "swift",
+            "swiftmailer",
+            "yii2"
+        ]
+    },
+    {
+        "name": "bower-asset/blueimp-canvas-to-blob",
+        "version": "v3.4.0",
+        "version_normalized": "3.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/blueimp/JavaScript-Canvas-to-Blob.git",
+            "reference": "4ff69f17a93ff04f827ad651d598bdeb7ce5aa4d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/blueimp/JavaScript-Canvas-to-Blob/zipball/4ff69f17a93ff04f827ad651d598bdeb7ce5aa4d",
+            "reference": "4ff69f17a93ff04f827ad651d598bdeb7ce5aa4d",
+            "shasum": ""
+        },
+        "type": "bower-asset-library",
+        "installation-source": "dist"
+    },
+    {
+        "name": "bower-asset/blueimp-load-image",
+        "version": "v2.7.0",
+        "version_normalized": "2.7.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/blueimp/JavaScript-Load-Image.git",
+            "reference": "133ef9b55cf9e620ad37120f643e15cfef9e581c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/blueimp/JavaScript-Load-Image/zipball/133ef9b55cf9e620ad37120f643e15cfef9e581c",
+            "reference": "133ef9b55cf9e620ad37120f643e15cfef9e581c",
+            "shasum": ""
+        },
+        "type": "bower-asset-library",
+        "installation-source": "dist"
+    },
+    {
+        "name": "bower-asset/blueimp-tmpl",
+        "version": "v3.5.0",
+        "version_normalized": "3.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/blueimp/JavaScript-Templates.git",
+            "reference": "3d603941a16e453ae22bfbd664b911917933fd54"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/blueimp/JavaScript-Templates/zipball/3d603941a16e453ae22bfbd664b911917933fd54",
+            "reference": "3d603941a16e453ae22bfbd664b911917933fd54",
+            "shasum": ""
+        },
+        "type": "bower-asset-library",
+        "installation-source": "dist"
+    },
+    {
+        "name": "2amigos/yii2-file-upload-widget",
+        "version": "1.0.6",
+        "version_normalized": "1.0.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/2amigos/yii2-file-upload-widget.git",
+            "reference": "78f0f17e049db46dfb256bb8bf2d4fd2bbaec7e1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/2amigos/yii2-file-upload-widget/zipball/78f0f17e049db46dfb256bb8bf2d4fd2bbaec7e1",
+            "reference": "78f0f17e049db46dfb256bb8bf2d4fd2bbaec7e1",
+            "shasum": ""
+        },
+        "require": {
+            "2amigos/yii2-gallery-widget": "~1.0",
+            "bower-asset/blueimp-file-upload": "~9.9",
+            "yiisoft/yii2": "~2.0.0",
+            "yiisoft/yii2-bootstrap": "~2.0.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0"
+        },
+        "time": "2016-09-26 09:14:18",
+        "type": "yii2-extension",
+        "extra": {
+            "asset-installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            },
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "dosamigos\\fileupload\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "2amigOS! Consulting Group",
+                "email": "hola@2amigos.us",
+                "homepage": "http://2amigos.us",
+                "role": "Developer"
+            },
+            {
+                "name": "Alexander Kochetov",
+                "email": "creocoder@gmail.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Blueimp file upload widget for the Yii framework",
+        "homepage": "https://github.com/2amigos/yii2-file-upload-widget",
+        "keywords": [
+            "2amigos",
+            "upload",
+            "widget",
+            "yii",
+            "yii 2",
             "yii2"
         ]
     }
