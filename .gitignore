@@ -1,4 +1,2 @@
-.ide
-.idea/
-
-.idea/workspace.xml
+.idea
+.idea/*
