@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use insolita\wgadminlte\Box;
 use maxwen\ckeditor\CKEditor;
+use maxwen\ckeditor\CKEditorInline;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\AuthUser */
@@ -48,10 +49,7 @@ use maxwen\ckeditor\CKEditor;
     <?= $form->field($model, 'email')->textInput(['maxlength' => true])->widget(CKEditor::className(), [
 		'options' => [
 			'rows' => 6,
-		],
-		'preset' => 'full',
-		'clientOptions' => [ 'username' => 'max.wen' ]
-
+		]
 	]) ?>
 
     <?= $form->field($model, 'status')->textInput() ?>
@@ -59,6 +57,7 @@ use maxwen\ckeditor\CKEditor;
     <?= $form->field($model, 'created_at')->textInput() ?>
 
     <?= $form->field($model, 'updated_at')->textInput() ?>
+
 
     <div class="form-group">
 		<div class="col-lg-offset-1 col-lg-11">

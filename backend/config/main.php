@@ -58,8 +58,9 @@ return [
 		'class' => 'mdm\admin\components\AccessControl',
 		'allowActions' => [
 			'site/*', //sites for access
-			'authuser/*',
-			'editor/*'
+			'debug/*',
+			'ckeditor/*', // add your rbac rules if you nedd
+			'authuser/*'
 		]
 	],
     'params' => $params,

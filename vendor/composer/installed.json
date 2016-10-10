@@ -1301,67 +1301,6 @@
         ]
     },
     {
-        "name": "2amigos/yii2-ckeditor-widget",
-        "version": "1.0.4",
-        "version_normalized": "1.0.4.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/2amigos/yii2-ckeditor-widget.git",
-            "reference": "023eb29fedfc3c3121c17688ed237e8688f5eb50"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/2amigos/yii2-ckeditor-widget/zipball/023eb29fedfc3c3121c17688ed237e8688f5eb50",
-            "reference": "023eb29fedfc3c3121c17688ed237e8688f5eb50",
-            "shasum": ""
-        },
-        "require": {
-            "yiisoft/yii2": "~2.0.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "4.*"
-        },
-        "time": "2015-04-30 12:22:25",
-        "type": "yii2-extension",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.0-dev"
-            },
-            "asset-installer-paths": {
-                "bower-asset-library": "vendor/bower"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "dosamigos\\ckeditor\\": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "2amigOS! Consulting Group",
-                "email": "hola@2amigos.us",
-                "homepage": "http://2amigos.us",
-                "role": "Developer"
-            }
-        ],
-        "description": "CKEditor widget for Yii2.",
-        "homepage": "http://yiiwheels.com/extension/ckeditor-widget",
-        "keywords": [
-            "2amigos",
-            "CKEditor",
-            "extension",
-            "widget",
-            "yii",
-            "yii 2",
-            "yii2"
-        ]
-    },
-    {
         "name": "maxwen/yii2-curl",
         "version": "1.0",
         "version_normalized": "1.0.0.0",
@@ -1405,81 +1344,6 @@
             "restful",
             "yii2"
         ]
-    },
-    {
-        "name": "bower-asset/ckeditor",
-        "version": "4.5.11",
-        "version_normalized": "4.5.11.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/ckeditor/ckeditor-releases.git",
-            "reference": "48155a1e1c7e84736b5a166ad3f33acea2a51255"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/48155a1e1c7e84736b5a166ad3f33acea2a51255",
-            "reference": "48155a1e1c7e84736b5a166ad3f33acea2a51255",
-            "shasum": ""
-        },
-        "type": "bower-asset-library",
-        "extra": {
-            "bower-asset-main": "./ckeditor.js"
-        },
-        "installation-source": "dist",
-        "license": [
-            "For licensing, see LICENSE.md or http://ckeditor.com/license."
-        ],
-        "description": "JavaScript WYSIWYG web text editor.",
-        "keywords": [
-            "ckeditor",
-            "editor",
-            "fckeditor",
-            "html",
-            "javascript",
-            "richtext",
-            "text",
-            "wysiwyg"
-        ]
-    },
-    {
-        "name": "maxwen/yii2-ckeditor-widget",
-        "version": "0.1.1",
-        "version_normalized": "0.1.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/max-wen/yii2-ckeditor-widget.git",
-            "reference": "19a57a77c50a9096a11b36316f781664ea7b99df"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/max-wen/yii2-ckeditor-widget/zipball/19a57a77c50a9096a11b36316f781664ea7b99df",
-            "reference": "19a57a77c50a9096a11b36316f781664ea7b99df",
-            "shasum": ""
-        },
-        "require": {
-            "bower-asset/ckeditor": "^4.5",
-            "bower-asset/jquery-cookie": "~1.4.1",
-            "yiisoft/yii2": "~2.0.0"
-        },
-        "time": "2016-09-30 05:02:51",
-        "type": "extension",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "maxwen\\ckeditor\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Max Wen",
-                "email": "max.wen@qq.com"
-            }
-        ],
-        "description": "ckeditor widget for yii2 framework, with ckfinder intergrated"
     },
     {
         "name": "cebe/markdown",
@@ -1717,5 +1581,127 @@
             "yii 2",
             "yii2"
         ]
+    },
+    {
+        "name": "ckeditor/ckeditor",
+        "version": "dev-full/4.5.x",
+        "version_normalized": "dev-full/4.5.x",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ckeditor/ckeditor-releases.git",
+            "reference": "037abe2a96bd51df0d5e767963ab0ad042128a7f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/037abe2a96bd51df0d5e767963ab0ad042128a7f",
+            "reference": "037abe2a96bd51df0d5e767963ab0ad042128a7f",
+            "shasum": ""
+        },
+        "time": "2016-09-07 15:57:09",
+        "type": "library",
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+",
+            "LGPL-2.1+",
+            "MPL-1.1+"
+        ],
+        "authors": [
+            {
+                "name": "CKSource",
+                "homepage": "http://cksource.com"
+            }
+        ],
+        "description": "JavaScript WYSIWYG web text editor.",
+        "homepage": "http://ckeditor.com",
+        "keywords": [
+            "CKEditor",
+            "editor",
+            "fckeditor",
+            "html",
+            "javascript",
+            "richtext",
+            "text",
+            "wysiwyg"
+        ]
+    },
+    {
+        "name": "maxwen/yii2-ckeditor-widget",
+        "version": "1.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/max-wen/yii2-ckeditor-widget.git",
+            "reference": "5be7ca161f4a2fe8e02a60f5b284e5b06092f1a3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/max-wen/yii2-ckeditor-widget/zipball/5be7ca161f4a2fe8e02a60f5b284e5b06092f1a3",
+            "reference": "5be7ca161f4a2fe8e02a60f5b284e5b06092f1a3",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/jquery-cookie": "~1.4.1",
+            "ckeditor/ckeditor": "dev-full/4.5.x",
+            "yiisoft/yii2": "~2.0.0"
+        },
+        "time": "2016-10-10 08:22:39",
+        "type": "extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "maxwen\\ckeditor\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Max Wen",
+                "email": "max.wen@qq.com"
+            }
+        ],
+        "description": "ckeditor widget for yii2 framework, with ckfinder intergrated"
+    },
+    {
+        "name": "maxwen/yii2-adminlte-gii",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/max-wen/yii2-adminlte-gii.git",
+            "reference": "4bffeea133fb3a8f58ae6565f42b175d904996c4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/max-wen/yii2-adminlte-gii/zipball/4bffeea133fb3a8f58ae6565f42b175d904996c4",
+            "reference": "4bffeea133fb3a8f58ae6565f42b175d904996c4",
+            "shasum": ""
+        },
+        "require": {
+            "almasaeed2010/adminlte": "~2.0",
+            "yiisoft/yii2": "~2.0.0"
+        },
+        "time": "2016-10-10 08:25:31",
+        "type": "extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "maxwen\\gii\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Max Wen",
+                "email": "max.wen@qq.com"
+            }
+        ],
+        "description": "yii2 code generator with adminlte theme"
     }
 ]

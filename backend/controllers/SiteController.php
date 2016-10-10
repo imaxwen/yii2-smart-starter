@@ -17,27 +17,28 @@ class SiteController extends Controller
      */
     public function behaviors()
     {
-        return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'rules' => [
-                    [
-                        'actions' => ['login', 'error', 'test'],
-                        'allow' => true,
-                    ],
-                    [
-                        'actions' => ['logout', 'index'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                ],
-            ],
-        ];
+		return [
+			'access' => [
+				'class' => AccessControl::className(),
+				'rules' => [
+					[
+						'actions' => ['login', 'error'],
+						'allow' => true,
+					],
+					[
+						'actions' => ['logout', 'index'],
+						'allow' => true,
+						'roles' => ['@'],
+					],
+				],
+			],
+			'verbs' => [
+				'class' => VerbFilter::className(),
+				'actions' => [
+					// 'logout' => ['post'],
+				],
+			],
+		];
     }
 
     /**
@@ -79,10 +80,4 @@ class SiteController extends Controller
 
         return $this->goHome();
     }
-
-    public function actionTest()
-	{
-		new \maxwen\ckeditor\CKEditorWidgetAsset();
-		var_dump(class_exists(\maxwen\ckeditor\CKEditorWidgetAsset::className()));
-	}
 }

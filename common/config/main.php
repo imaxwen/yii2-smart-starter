@@ -3,7 +3,7 @@ return [
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
 	'language' => 'zh-CN',
 	'controllerMap' => [
-		'editor' => [
+		'ckeditor' => [
 			'class'    => 'maxwen\ckeditor\controllers\EditorController',
 			'viewPath' => '@vendor/maxwen/yii2-ckeditor-widget/views/editor'
 		]

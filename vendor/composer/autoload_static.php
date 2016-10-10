@@ -31,6 +31,7 @@ class ComposerStaticInit81891241cee9015189fbe28578777923
         array (
             'mdm\\admin\\' => 10,
             'maxwen\\yii\\curl\\' => 16,
+            'maxwen\\gii\\' => 11,
             'maxwen\\ckeditor\\' => 16,
         ),
         'i' => 
@@ -41,7 +42,6 @@ class ComposerStaticInit81891241cee9015189fbe28578777923
         array (
             'dosamigos\\gallery\\' => 18,
             'dosamigos\\fileupload\\' => 21,
-            'dosamigos\\ckeditor\\' => 19,
             'dmstr\\' => 6,
         ),
         'c' => 
@@ -99,6 +99,10 @@ class ComposerStaticInit81891241cee9015189fbe28578777923
         array (
             0 => __DIR__ . '/..' . '/maxwen/yii2-curl',
         ),
+        'maxwen\\gii\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/maxwen/yii2-adminlte-gii',
+        ),
         'maxwen\\ckeditor\\' => 
         array (
             0 => __DIR__ . '/..' . '/maxwen/yii2-ckeditor-widget',
@@ -114,10 +118,6 @@ class ComposerStaticInit81891241cee9015189fbe28578777923
         'dosamigos\\fileupload\\' => 
         array (
             0 => __DIR__ . '/..' . '/2amigos/yii2-file-upload-widget/src',
-        ),
-        'dosamigos\\ckeditor\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/2amigos/yii2-ckeditor-widget/src',
         ),
         'dmstr\\' => 
         array (
