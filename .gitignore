@@ -1,3 +1,4 @@
 .idea
 .idea/*
 vendor/maxwen/yii2-ckeditor-widget/assets/ckfinder/ckfinder.js
+vendor/maxwen/yii2-ckeditor-widget/assets/ckfinder/config.php
