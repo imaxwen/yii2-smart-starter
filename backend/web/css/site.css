@@ -31,6 +31,14 @@ body {
     padding: 14px 24px;
 }
 
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+
 .not-set {
     color: #c55;
     font-style: italic;
