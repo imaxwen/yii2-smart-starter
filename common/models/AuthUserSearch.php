@@ -5,12 +5,12 @@ namespace common\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use common\models\AuthUser;
+use common\models\Authuser;
 
 /**
- * AuthUserSearch represents the model behind the search form about `common\models\AuthUser`.
+ * AuthuserSearch represents the model behind the search form about `common\models\Authuser`.
  */
-class AuthUserSearch extends AuthUser
+class AuthuserSearch extends Authuser
 {
     /**
      * @inheritdoc
@@ -41,7 +41,7 @@ class AuthUserSearch extends AuthUser
      */
     public function search($params)
     {
-        $query = AuthUser::find();
+        $query = Authuser::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,

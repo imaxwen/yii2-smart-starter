@@ -60,6 +60,7 @@ return [
 			'site/*', //sites for access
 			'debug/*',
 			'ckeditor/*', // add your rbac rules if you nedd
+			'elfinder/*', // add your rbac rules if you nedd
 			'authuser/*'
 		]
 	],

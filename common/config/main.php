@@ -6,6 +6,14 @@ return [
 		'ckeditor' => [
 			'class'    => 'maxwen\ckeditor\controllers\EditorController',
 			'viewPath' => '@vendor/maxwen/yii2-ckeditor-widget/views/editor'
+		],
+		'elfinder' => [
+			'class' => 'mihaildev\elfinder\PathController',
+			'access' => ['@'],
+			'root' => [
+				'path' => '/uploads',
+				'name' => 'root'
+			]
 		]
 	],
     'components' => [

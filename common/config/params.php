@@ -17,5 +17,6 @@ return [
 		// custom options
 		'language'   => 'zh-cn',
 		'font_names' => '宋体;楷体;黑体;微软雅黑;隶书;仿宋;Arial;Comic Sans MS;Courier New;Tahoma;Times New Roman;Verdana',
+		'toolbar'    => 'Full'
 	],
 ];
