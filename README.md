@@ -1,9 +1,9 @@
 Yii2 adminLTE with Rbac
 ===============================
 
-![image](login.png)
+![image](login.jpg)
 
-![image](screenshot.png)
+![image](screenshot.jpg)
 
 
 
