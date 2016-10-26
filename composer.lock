@@ -137,16 +137,16 @@
         },
         {
             "name": "almasaeed2010/adminlte",
-            "version": "v2.3.6",
+            "version": "v2.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/almasaeed2010/AdminLTE.git",
-                "reference": "be11566d9539370b196ac85f22a6baf9f42c87cb"
+                "reference": "797b65b3ca90525a4e048de5b8d02ba6878ea239"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/be11566d9539370b196ac85f22a6baf9f42c87cb",
-                "reference": "be11566d9539370b196ac85f22a6baf9f42c87cb",
+                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/797b65b3ca90525a4e048de5b8d02ba6878ea239",
+                "reference": "797b65b3ca90525a4e048de5b8d02ba6878ea239",
                 "shasum": ""
             },
             "type": "library",
@@ -173,7 +173,7 @@
                 "theme",
                 "web"
             ],
-            "time": "2016-08-04 23:22:06"
+            "time": "2016-10-19 15:34:25"
         },
         {
             "name": "bower-asset/blueimp-canvas-to-blob",
@@ -193,16 +193,16 @@
         },
         {
             "name": "bower-asset/blueimp-file-upload",
-            "version": "9.12.5",
+            "version": "v9.12.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/blueimp/jQuery-File-Upload.git",
-                "reference": "b9e144b735ab95a598b975bdc8375e14a2e76157"
+                "reference": "cf2c7465d47bff38a23df0fc6a511070ee75e2bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blueimp/jQuery-File-Upload/zipball/b9e144b735ab95a598b975bdc8375e14a2e76157",
-                "reference": "b9e144b735ab95a598b975bdc8375e14a2e76157",
+                "url": "https://api.github.com/repos/blueimp/jQuery-File-Upload/zipball/cf2c7465d47bff38a23df0fc6a511070ee75e2bf",
+                "reference": "cf2c7465d47bff38a23df0fc6a511070ee75e2bf",
                 "shasum": ""
             },
             "require": {
@@ -693,16 +693,16 @@
         },
         {
             "name": "dmstr/yii2-adminlte-asset",
-            "version": "2.3.3",
+            "version": "2.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-adminlte-asset.git",
-                "reference": "a1330f2f678d66d8ce2f8acb6fb9ce60a4614c60"
+                "reference": "32fdb7378f3f4bcc5fb35db5e17a2dd11f9e2b57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/a1330f2f678d66d8ce2f8acb6fb9ce60a4614c60",
-                "reference": "a1330f2f678d66d8ce2f8acb6fb9ce60a4614c60",
+                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/32fdb7378f3f4bcc5fb35db5e17a2dd11f9e2b57",
+                "reference": "32fdb7378f3f4bcc5fb35db5e17a2dd11f9e2b57",
                 "shasum": ""
             },
             "require": {
@@ -749,7 +749,7 @@
                 "theme",
                 "yii2"
             ],
-            "time": "2016-07-28 03:57:05"
+            "time": "2016-10-21 02:03:45"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -796,6 +796,54 @@
             "time": "2016-07-16 12:58:58"
         },
         {
+            "name": "fortawesome/font-awesome",
+            "version": "v4.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FortAwesome/Font-Awesome.git",
+                "reference": "a8386aae19e200ddb0f6845b5feeee5eb7013687"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/a8386aae19e200ddb0f6845b5feeee5eb7013687",
+                "reference": "a8386aae19e200ddb0f6845b5feeee5eb7013687",
+                "shasum": ""
+            },
+            "require-dev": {
+                "jekyll": "1.0.2",
+                "lessc": "1.4.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.6.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OFL-1.1",
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Gandy",
+                    "email": "dave@fontawesome.io",
+                    "homepage": "http://twitter.com/davegandy",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The iconic font and CSS framework",
+            "homepage": "http://fontawesome.io/",
+            "keywords": [
+                "FontAwesome",
+                "awesome",
+                "bootstrap",
+                "font",
+                "icon"
+            ],
+            "time": "2016-10-24 15:52:54"
+        },
+        {
             "name": "insolita/yii2-adminlte-widgets",
             "version": "v1.1.6",
             "source": {
@@ -839,16 +887,16 @@
         },
         {
             "name": "maxwen/yii2-adminlte-gii",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/max-wen/yii2-adminlte-gii.git",
-                "reference": "4bffeea133fb3a8f58ae6565f42b175d904996c4"
+                "reference": "1dbddb974ca6ddbc90f9a66704d44353db3628c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/max-wen/yii2-adminlte-gii/zipball/4bffeea133fb3a8f58ae6565f42b175d904996c4",
-                "reference": "4bffeea133fb3a8f58ae6565f42b175d904996c4",
+                "url": "https://api.github.com/repos/max-wen/yii2-adminlte-gii/zipball/1dbddb974ca6ddbc90f9a66704d44353db3628c1",
+                "reference": "1dbddb974ca6ddbc90f9a66704d44353db3628c1",
                 "shasum": ""
             },
             "require": {
@@ -872,20 +920,20 @@
                 }
             ],
             "description": "yii2 code generator with adminlte theme",
-            "time": "2016-10-10 08:25:31"
+            "time": "2016-10-20 03:38:18"
         },
         {
             "name": "maxwen/yii2-ckeditor-widget",
-            "version": "1.0",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/max-wen/yii2-ckeditor-widget.git",
-                "reference": "5be7ca161f4a2fe8e02a60f5b284e5b06092f1a3"
+                "reference": "9d6debac2df87af33b823d555833d2b50219ad4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/max-wen/yii2-ckeditor-widget/zipball/5be7ca161f4a2fe8e02a60f5b284e5b06092f1a3",
-                "reference": "5be7ca161f4a2fe8e02a60f5b284e5b06092f1a3",
+                "url": "https://api.github.com/repos/max-wen/yii2-ckeditor-widget/zipball/9d6debac2df87af33b823d555833d2b50219ad4a",
+                "reference": "9d6debac2df87af33b823d555833d2b50219ad4a",
                 "shasum": ""
             },
             "require": {
@@ -910,7 +958,7 @@
                 }
             ],
             "description": "ckeditor widget for yii2 framework, with ckfinder intergrated",
-            "time": "2016-10-10 08:22:39"
+            "time": "2016-10-25 08:43:27"
         },
         {
             "name": "maxwen/yii2-curl",
@@ -1066,20 +1114,21 @@
         },
         {
             "name": "rmrevin/yii2-fontawesome",
-            "version": "2.16.1",
+            "version": "2.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rmrevin/yii2-fontawesome.git",
-                "reference": "ab08282b8cd05c570634926f41c868cf902981e7"
+                "reference": "470202eace1868f1f627bf8c4ce21a17b0548c4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/ab08282b8cd05c570634926f41c868cf902981e7",
-                "reference": "ab08282b8cd05c570634926f41c868cf902981e7",
+                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/470202eace1868f1f627bf8c4ce21a17b0548c4a",
+                "reference": "470202eace1868f1f627bf8c4ce21a17b0548c4a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0",
+                "fortawesome/font-awesome": "~4.7",
+                "php": ">=5.5.0",
                 "yiisoft/yii2": "2.0.*"
             },
             "type": "yii2-extension",
@@ -1113,7 +1162,7 @@
                 "font",
                 "yii"
             ],
-            "time": "2016-08-31 12:41:25"
+            "time": "2016-10-25 15:14:55"
         },
         {
             "name": "studio-42/elfinder",
@@ -1228,16 +1277,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.9",
+            "version": "2.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "2b75151ea60e1fd820046416eee2e89c3dda1133"
+                "reference": "5bfcb7a6dfa9771e2248eb8c4448613330f343ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/2b75151ea60e1fd820046416eee2e89c3dda1133",
-                "reference": "2b75151ea60e1fd820046416eee2e89c3dda1133",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/5bfcb7a6dfa9771e2248eb8c4448613330f343ff",
+                "reference": "5bfcb7a6dfa9771e2248eb8c4448613330f343ff",
                 "shasum": ""
             },
             "require": {
@@ -1318,7 +1367,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2016-07-11 13:36:42"
+            "time": "2016-10-20 12:02:50"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -1675,6 +1724,7 @@
                 "codeception",
                 "yii2"
             ],
+            "abandoned": "codeception/codeception",
             "time": "2016-03-17 03:41:26"
         },
         {
