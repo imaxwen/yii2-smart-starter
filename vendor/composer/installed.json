@@ -1161,24 +1161,6 @@
         "installation-source": "dist"
     },
     {
-        "name": "bower-asset/blueimp-load-image",
-        "version": "v2.7.0",
-        "version_normalized": "2.7.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/blueimp/JavaScript-Load-Image.git",
-            "reference": "133ef9b55cf9e620ad37120f643e15cfef9e581c"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/blueimp/JavaScript-Load-Image/zipball/133ef9b55cf9e620ad37120f643e15cfef9e581c",
-            "reference": "133ef9b55cf9e620ad37120f643e15cfef9e581c",
-            "shasum": ""
-        },
-        "type": "bower-asset-library",
-        "installation-source": "dist"
-    },
-    {
         "name": "bower-asset/blueimp-tmpl",
         "version": "v3.5.0",
         "version_normalized": "3.5.0.0",
@@ -1701,71 +1683,6 @@
         ]
     },
     {
-        "name": "bower-asset/blueimp-file-upload",
-        "version": "v9.12.6",
-        "version_normalized": "9.12.6.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/blueimp/jQuery-File-Upload.git",
-            "reference": "cf2c7465d47bff38a23df0fc6a511070ee75e2bf"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/blueimp/jQuery-File-Upload/zipball/cf2c7465d47bff38a23df0fc6a511070ee75e2bf",
-            "reference": "cf2c7465d47bff38a23df0fc6a511070ee75e2bf",
-            "shasum": ""
-        },
-        "require": {
-            "bower-asset/blueimp-canvas-to-blob": ">=2.1.1",
-            "bower-asset/blueimp-load-image": ">=1.13.0",
-            "bower-asset/blueimp-tmpl": ">=2.5.4",
-            "bower-asset/jquery": ">=1.6"
-        },
-        "type": "bower-asset-library",
-        "extra": {
-            "bower-asset-main": [
-                "js/jquery.fileupload.js"
-            ],
-            "bower-asset-ignore": [
-                "/*.*",
-                "/cors",
-                "css/demo-ie8.css",
-                "css/demo.css",
-                "css/style.css",
-                "js/app.js",
-                "js/main.js",
-                "server",
-                "test"
-            ]
-        },
-        "installation-source": "dist",
-        "license": [
-            "MIT"
-        ],
-        "description": "File Upload widget with multiple file selection, drag&amp;drop support, progress bar, validation and preview images.",
-        "keywords": [
-            "bootstrap",
-            "chunk",
-            "cross-domain",
-            "cross-site",
-            "drag",
-            "drop",
-            "file",
-            "gae",
-            "go",
-            "jquery",
-            "multiple",
-            "php",
-            "preview",
-            "progress",
-            "python",
-            "resume",
-            "selection",
-            "upload",
-            "widget"
-        ]
-    },
-    {
         "name": "fortawesome/font-awesome",
         "version": "v4.7.0",
         "version_normalized": "4.7.0.0",
@@ -1947,5 +1864,88 @@
             }
         ],
         "description": "yii2 code generator with adminlte theme"
+    },
+    {
+        "name": "bower-asset/blueimp-load-image",
+        "version": "v2.8.1",
+        "version_normalized": "2.8.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/blueimp/JavaScript-Load-Image.git",
+            "reference": "406453f0a605e0b080dbae722e84b4c47a8f58f8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/blueimp/JavaScript-Load-Image/zipball/406453f0a605e0b080dbae722e84b4c47a8f58f8",
+            "reference": "406453f0a605e0b080dbae722e84b4c47a8f58f8",
+            "shasum": ""
+        },
+        "type": "bower-asset-library",
+        "installation-source": "dist"
+    },
+    {
+        "name": "bower-asset/blueimp-file-upload",
+        "version": "v9.13.1",
+        "version_normalized": "9.13.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/blueimp/jQuery-File-Upload.git",
+            "reference": "6906d8dbf9e3c0dc2f2f67868f25f4bddd461eb5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/blueimp/jQuery-File-Upload/zipball/6906d8dbf9e3c0dc2f2f67868f25f4bddd461eb5",
+            "reference": "6906d8dbf9e3c0dc2f2f67868f25f4bddd461eb5",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/blueimp-canvas-to-blob": ">=2.1.1",
+            "bower-asset/blueimp-load-image": ">=1.13.0",
+            "bower-asset/blueimp-tmpl": ">=2.5.4",
+            "bower-asset/jquery": ">=1.6"
+        },
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": [
+                "js/jquery.fileupload.js"
+            ],
+            "bower-asset-ignore": [
+                "/*.*",
+                "/cors",
+                "css/demo-ie8.css",
+                "css/demo.css",
+                "css/style.css",
+                "js/app.js",
+                "js/main.js",
+                "server",
+                "test"
+            ]
+        },
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "description": "File Upload widget with multiple file selection, drag&amp;drop support, progress bar, validation and preview images.",
+        "keywords": [
+            "bootstrap",
+            "chunk",
+            "cross-domain",
+            "cross-site",
+            "drag",
+            "drop",
+            "file",
+            "gae",
+            "go",
+            "jquery",
+            "multiple",
+            "php",
+            "preview",
+            "progress",
+            "python",
+            "resume",
+            "selection",
+            "upload",
+            "widget"
+        ]
     }
 ]
