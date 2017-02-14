@@ -20,7 +20,6 @@ class ComposerStaticInit81891241cee9015189fbe28578777923
             'yii\\faker\\' => 10,
             'yii\\debug\\' => 10,
             'yii\\composer\\' => 13,
-            'yii\\codeception\\' => 16,
             'yii\\bootstrap\\' => 14,
             'yii\\' => 4,
         ),
@@ -80,10 +79,6 @@ class ComposerStaticInit81891241cee9015189fbe28578777923
         'yii\\composer\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-composer',
-        ),
-        'yii\\codeception\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/yiisoft/yii2-codeception',
         ),
         'yii\\bootstrap\\' => 
         array (
