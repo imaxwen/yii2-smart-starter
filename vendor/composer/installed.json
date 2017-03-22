@@ -48,7 +48,7 @@
             "fzaninotto/faker": "*",
             "yiisoft/yii2": "*"
         },
-        "time": "2015-03-01 06:22:44",
+        "time": "2015-03-01T06:22:44+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -76,110 +76,6 @@
             "Fixture",
             "faker",
             "yii2"
-        ]
-    },
-    {
-        "name": "yiisoft/yii2-composer",
-        "version": "2.0.4",
-        "version_normalized": "2.0.4.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/yiisoft/yii2-composer.git",
-            "reference": "7452fd908a5023b8bb5ea1b123a174ca080de464"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/7452fd908a5023b8bb5ea1b123a174ca080de464",
-            "reference": "7452fd908a5023b8bb5ea1b123a174ca080de464",
-            "shasum": ""
-        },
-        "require": {
-            "composer-plugin-api": "^1.0"
-        },
-        "time": "2016-02-06 00:49:24",
-        "type": "composer-plugin",
-        "extra": {
-            "class": "yii\\composer\\Plugin",
-            "branch-alias": {
-                "dev-master": "2.0.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "yii\\composer\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Qiang Xue",
-                "email": "qiang.xue@gmail.com"
-            }
-        ],
-        "description": "The composer plugin for Yii extension installer",
-        "keywords": [
-            "composer",
-            "extension installer",
-            "yii2"
-        ]
-    },
-    {
-        "name": "swiftmailer/swiftmailer",
-        "version": "v5.4.3",
-        "version_normalized": "5.4.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/swiftmailer/swiftmailer.git",
-            "reference": "4cc92842069c2bbc1f28daaaf1d2576ec4dfe153"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/4cc92842069c2bbc1f28daaaf1d2576ec4dfe153",
-            "reference": "4cc92842069c2bbc1f28daaaf1d2576ec4dfe153",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.3"
-        },
-        "require-dev": {
-            "mockery/mockery": "~0.9.1"
-        },
-        "time": "2016-07-08 11:51:25",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "5.4-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "files": [
-                "lib/swift_required.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Chris Corbyn"
-            },
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            }
-        ],
-        "description": "Swiftmailer, free feature-rich PHP mailer",
-        "homepage": "http://swiftmailer.org",
-        "keywords": [
-            "email",
-            "mail",
-            "mailer"
         ]
     },
     {
@@ -252,100 +148,6 @@
         ]
     },
     {
-        "name": "bower-asset/jquery.inputmask",
-        "version": "3.2.7",
-        "version_normalized": "3.2.7.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/RobinHerbots/jquery.inputmask.git",
-            "reference": "5a72c563b502b8e05958a524cdfffafe9987be38"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/5a72c563b502b8e05958a524cdfffafe9987be38",
-            "reference": "5a72c563b502b8e05958a524cdfffafe9987be38",
-            "shasum": ""
-        },
-        "require": {
-            "bower-asset/jquery": ">=1.7"
-        },
-        "type": "bower-asset-library",
-        "extra": {
-            "bower-asset-main": [
-                "./dist/inputmask/inputmask.js"
-            ],
-            "bower-asset-ignore": [
-                "**/*",
-                "!dist/*",
-                "!dist/inputmask/*",
-                "!dist/min/*",
-                "!dist/min/inputmask/*",
-                "!extra/bindings/*",
-                "!extra/dependencyLibs/*",
-                "!extra/phone-codes/*"
-            ]
-        },
-        "installation-source": "dist",
-        "license": [
-            "http://opensource.org/licenses/mit-license.php"
-        ],
-        "description": "jquery.inputmask is a jquery plugin which create an input mask.",
-        "keywords": [
-            "form",
-            "input",
-            "inputmask",
-            "jquery",
-            "mask",
-            "plugins"
-        ]
-    },
-    {
-        "name": "ezyang/htmlpurifier",
-        "version": "v4.8.0",
-        "version_normalized": "4.8.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/ezyang/htmlpurifier.git",
-            "reference": "d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2",
-            "reference": "d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.2"
-        },
-        "time": "2016-07-16 12:58:58",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "HTMLPurifier": "library/"
-            },
-            "files": [
-                "library/HTMLPurifier.composer.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "LGPL"
-        ],
-        "authors": [
-            {
-                "name": "Edward Z. Yang",
-                "email": "admin@htmlpurifier.org",
-                "homepage": "http://ezyang.com"
-            }
-        ],
-        "description": "Standards compliant HTML filter written in PHP",
-        "homepage": "http://htmlpurifier.org/",
-        "keywords": [
-            "html"
-        ]
-    },
-    {
         "name": "bower-asset/bootstrap",
         "version": "v3.3.7",
         "version_normalized": "3.3.7.0",
@@ -415,7 +217,7 @@
             "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
             "yiisoft/yii2": ">=2.0.6"
         },
-        "time": "2016-03-17 03:29:28",
+        "time": "2016-03-17T03:29:28+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -445,55 +247,6 @@
         "description": "The Twitter Bootstrap extension for the Yii framework",
         "keywords": [
             "bootstrap",
-            "yii2"
-        ]
-    },
-    {
-        "name": "yiisoft/yii2-debug",
-        "version": "2.0.6",
-        "version_normalized": "2.0.6.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/yiisoft/yii2-debug.git",
-            "reference": "55ed2e853ed8050a34415f63a4da84f88a56f895"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/55ed2e853ed8050a34415f63a4da84f88a56f895",
-            "reference": "55ed2e853ed8050a34415f63a4da84f88a56f895",
-            "shasum": ""
-        },
-        "require": {
-            "yiisoft/yii2": ">=2.0.4",
-            "yiisoft/yii2-bootstrap": "*"
-        },
-        "time": "2016-03-17 03:50:19",
-        "type": "yii2-extension",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.0.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "yii\\debug\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Qiang Xue",
-                "email": "qiang.xue@gmail.com"
-            }
-        ],
-        "description": "The debugger extension for the Yii framework",
-        "keywords": [
-            "debug",
-            "debugger",
             "yii2"
         ]
     },
@@ -541,7 +294,7 @@
             "reference": "0464787bfa7cd13576c5a1e318709768798bec6a",
             "shasum": ""
         },
-        "time": "2016-04-07 12:29:16",
+        "time": "2016-04-07T12:29:16+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -587,7 +340,7 @@
             "yiisoft/yii2": ">=2.0.4",
             "yiisoft/yii2-bootstrap": "~2.0"
         },
-        "time": "2016-03-18 14:09:46",
+        "time": "2016-03-18T14:09:46+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -644,7 +397,7 @@
             "phpunit/phpunit": "~4.0",
             "squizlabs/php_codesniffer": "~1.5"
         },
-        "time": "2016-04-29 12:21:54",
+        "time": "2016-04-29T12:21:54+00:00",
         "type": "library",
         "extra": {
             "branch-alias": []
@@ -695,7 +448,7 @@
         "suggest": {
             "yiisoft/yii2-bootstrap": "Used when using layout 'left-menu', 'right-menu' or 'top-menu'"
         },
-        "time": "2016-05-20 23:38:13",
+        "time": "2016-05-20T23:38:13+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -750,7 +503,7 @@
         "require": {
             "yiisoft/yii2": "*"
         },
-        "time": "2013-12-10 17:49:58",
+        "time": "2013-12-10T17:49:58+00:00",
         "type": "yii2-extension",
         "installation-source": "dist",
         "autoload": {
@@ -829,7 +582,7 @@
             "bower-asset/jquery-cookie": "~1.4.1",
             "yiisoft/yii2": "*"
         },
-        "time": "2016-06-02 20:58:50",
+        "time": "2016-06-02T20:58:50+00:00",
         "type": "yii2-extension",
         "installation-source": "dist",
         "autoload": {
@@ -895,7 +648,7 @@
             "phpunit/phpunit": "~4.0",
             "scrutinizer/ocular": "~1.1"
         },
-        "time": "2016-09-10 19:18:19",
+        "time": "2016-09-10T19:18:19+00:00",
         "type": "yii2-extension",
         "extra": {
             "asset-installer-paths": {
@@ -954,7 +707,7 @@
             "ext-curl": "*",
             "yiisoft/yii2": "*"
         },
-        "time": "2016-01-08 02:42:49",
+        "time": "2016-01-08T02:42:49+00:00",
         "type": "yii2-extension",
         "installation-source": "dist",
         "autoload": {
@@ -1004,7 +757,7 @@
             "facebook/xhprof": "*@dev",
             "phpunit/phpunit": "4.1.*"
         },
-        "time": "2016-09-14 20:40:20",
+        "time": "2016-09-14T20:40:20+00:00",
         "bin": [
             "bin/markdown"
         ],
@@ -1061,7 +814,7 @@
             "swiftmailer/swiftmailer": "~5.0",
             "yiisoft/yii2": "~2.0.4"
         },
-        "time": "2016-09-09 11:48:11",
+        "time": "2016-09-09T11:48:11+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -1095,42 +848,6 @@
         ]
     },
     {
-        "name": "bower-asset/blueimp-canvas-to-blob",
-        "version": "v3.4.0",
-        "version_normalized": "3.4.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/blueimp/JavaScript-Canvas-to-Blob.git",
-            "reference": "4ff69f17a93ff04f827ad651d598bdeb7ce5aa4d"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/blueimp/JavaScript-Canvas-to-Blob/zipball/4ff69f17a93ff04f827ad651d598bdeb7ce5aa4d",
-            "reference": "4ff69f17a93ff04f827ad651d598bdeb7ce5aa4d",
-            "shasum": ""
-        },
-        "type": "bower-asset-library",
-        "installation-source": "dist"
-    },
-    {
-        "name": "bower-asset/blueimp-tmpl",
-        "version": "v3.5.0",
-        "version_normalized": "3.5.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/blueimp/JavaScript-Templates.git",
-            "reference": "3d603941a16e453ae22bfbd664b911917933fd54"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/blueimp/JavaScript-Templates/zipball/3d603941a16e453ae22bfbd664b911917933fd54",
-            "reference": "3d603941a16e453ae22bfbd664b911917933fd54",
-            "shasum": ""
-        },
-        "type": "bower-asset-library",
-        "installation-source": "dist"
-    },
-    {
         "name": "2amigos/yii2-file-upload-widget",
         "version": "1.0.6",
         "version_normalized": "1.0.6.0",
@@ -1154,7 +871,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.0"
         },
-        "time": "2016-09-26 09:14:18",
+        "time": "2016-09-26T09:14:18+00:00",
         "type": "yii2-extension",
         "extra": {
             "asset-installer-paths": {
@@ -1214,7 +931,7 @@
             "reference": "037abe2a96bd51df0d5e767963ab0ad042128a7f",
             "shasum": ""
         },
-        "time": "2016-09-07 15:57:09",
+        "time": "2016-09-07T15:57:09+00:00",
         "type": "library",
         "installation-source": "source",
         "notification-url": "https://packagist.org/downloads/",
@@ -1241,66 +958,6 @@
             "text",
             "wysiwyg"
         ]
-    },
-    {
-        "name": "studio-42/elfinder",
-        "version": "2.1.16",
-        "version_normalized": "2.1.16.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Studio-42/elFinder.git",
-            "reference": "2b0d0db00079a652bcfb8ee4ad82720c5f6c33dc"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/2b0d0db00079a652bcfb8ee4ad82720c5f6c33dc",
-            "reference": "2b0d0db00079a652bcfb8ee4ad82720c5f6c33dc",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.2"
-        },
-        "suggest": {
-            "barryvdh/elfinder-flysystem-driver": "VolumeDriver for elFinder to use Flysystem as a root.",
-            "dropbox-php/dropbox-php": "elFinder Volume driver `Dropbox` require `dropbox-php/dropbox-php`.",
-            "nao-pon/flysystem-google-drive": "require in GoogleDrive network volume mounting.",
-            "pear/http_oauth": "dropbox-php require `pear/http_oauth` or `PHP OAuth extension`."
-        },
-        "time": "2016-10-11 04:44:07",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Dmitry Levashov",
-                "email": "dio@std42.ru",
-                "homepage": "http://std42.ru"
-            },
-            {
-                "name": "Troex Nevelin",
-                "email": "troex@fury.scancode.ru",
-                "homepage": "http://std42.ru"
-            },
-            {
-                "name": "Naoki Sawada",
-                "email": "hypweb@gmail.com",
-                "homepage": "http://xoops.hypweb.net"
-            },
-            {
-                "name": "Community contributions",
-                "homepage": "https://github.com/Studio-42/elFinder/contributors"
-            }
-        ],
-        "description": "File manager for web",
-        "homepage": "http://elfinder.org"
     },
     {
         "name": "bower-asset/jquery-ui",
@@ -1348,7 +1005,7 @@
             "bower-asset/jquery-ui": "1.11.*@stable",
             "yiisoft/yii2": ">=2.0.4"
         },
-        "time": "2016-07-22 22:26:59",
+        "time": "2016-07-22T22:26:59+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -1382,197 +1039,6 @@
         ]
     },
     {
-        "name": "mihaildev/yii2-elfinder",
-        "version": "1.2.1",
-        "version_normalized": "1.2.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/MihailDev/yii2-elfinder.git",
-            "reference": "0314ca3c15676ed047dc763852b02d2d9dd418ec"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/MihailDev/yii2-elfinder/zipball/0314ca3c15676ed047dc763852b02d2d9dd418ec",
-            "reference": "0314ca3c15676ed047dc763852b02d2d9dd418ec",
-            "shasum": ""
-        },
-        "require": {
-            "studio-42/elfinder": "^2.1.10",
-            "yiisoft/yii2-jui": "*"
-        },
-        "time": "2016-06-30 12:03:17",
-        "type": "yii2-extension",
-        "extra": {
-            "asset-installer-paths": {
-                "npm-asset-library": "vendor/npm",
-                "bower-asset-library": "vendor/bower"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "mihaildev\\elfinder\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Mihail",
-                "email": "mihail.kucher@gmail.com",
-                "homepage": "https://github.com/MihailDev",
-                "role": "Developer"
-            }
-        ],
-        "description": "Yii2 ElFinder",
-        "homepage": "https://github.com/MihailDev/yii2-elfinder",
-        "keywords": [
-            "elfinder",
-            "filemanager",
-            "yii"
-        ]
-    },
-    {
-        "name": "yiisoft/yii2",
-        "version": "2.0.10",
-        "version_normalized": "2.0.10.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/yiisoft/yii2-framework.git",
-            "reference": "5bfcb7a6dfa9771e2248eb8c4448613330f343ff"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/5bfcb7a6dfa9771e2248eb8c4448613330f343ff",
-            "reference": "5bfcb7a6dfa9771e2248eb8c4448613330f343ff",
-            "shasum": ""
-        },
-        "require": {
-            "bower-asset/jquery": "2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
-            "bower-asset/jquery.inputmask": "~3.2.2",
-            "bower-asset/punycode": "1.3.*",
-            "bower-asset/yii2-pjax": "~2.0.1",
-            "cebe/markdown": "~1.0.0 | ~1.1.0",
-            "ext-ctype": "*",
-            "ext-mbstring": "*",
-            "ezyang/htmlpurifier": "~4.6",
-            "lib-pcre": "*",
-            "php": ">=5.4.0",
-            "yiisoft/yii2-composer": "~2.0.4"
-        },
-        "time": "2016-10-20 12:02:50",
-        "bin": [
-            "yii"
-        ],
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.0.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "yii\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Qiang Xue",
-                "email": "qiang.xue@gmail.com",
-                "homepage": "http://www.yiiframework.com/",
-                "role": "Founder and project lead"
-            },
-            {
-                "name": "Alexander Makarov",
-                "email": "sam@rmcreative.ru",
-                "homepage": "http://rmcreative.ru/",
-                "role": "Core framework development"
-            },
-            {
-                "name": "Maurizio Domba",
-                "homepage": "http://mdomba.info/",
-                "role": "Core framework development"
-            },
-            {
-                "name": "Carsten Brandt",
-                "email": "mail@cebe.cc",
-                "homepage": "http://cebe.cc/",
-                "role": "Core framework development"
-            },
-            {
-                "name": "Timur Ruziev",
-                "email": "resurtm@gmail.com",
-                "homepage": "http://resurtm.com/",
-                "role": "Core framework development"
-            },
-            {
-                "name": "Paul Klimov",
-                "email": "klimov.paul@gmail.com",
-                "role": "Core framework development"
-            },
-            {
-                "name": "Dmitry Naumenko",
-                "email": "d.naumenko.a@gmail.com",
-                "role": "Core framework development"
-            }
-        ],
-        "description": "Yii PHP Framework Version 2",
-        "homepage": "http://www.yiiframework.com/",
-        "keywords": [
-            "framework",
-            "yii2"
-        ]
-    },
-    {
-        "name": "almasaeed2010/adminlte",
-        "version": "v2.3.7",
-        "version_normalized": "2.3.7.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/almasaeed2010/AdminLTE.git",
-            "reference": "797b65b3ca90525a4e048de5b8d02ba6878ea239"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/797b65b3ca90525a4e048de5b8d02ba6878ea239",
-            "reference": "797b65b3ca90525a4e048de5b8d02ba6878ea239",
-            "shasum": ""
-        },
-        "time": "2016-10-19 15:34:25",
-        "type": "library",
-        "installation-source": "dist",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Abdullah Almsaeed",
-                "email": "abdullah@almsaeedstudio.com"
-            }
-        ],
-        "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 3",
-        "homepage": "http://almsaeedstudio.com/",
-        "keywords": [
-            "JS",
-            "admin",
-            "back-end",
-            "css",
-            "less",
-            "responsive",
-            "template",
-            "theme",
-            "web"
-        ]
-    },
-    {
         "name": "dmstr/yii2-adminlte-asset",
         "version": "2.3.4",
         "version_normalized": "2.3.4.0",
@@ -1594,7 +1060,7 @@
             "yiisoft/yii2": "2.*",
             "yiisoft/yii2-bootstrap": "2.*"
         },
-        "time": "2016-10-21 02:03:45",
+        "time": "2016-10-21T02:03:45+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -1653,7 +1119,7 @@
             "jekyll": "1.0.2",
             "lessc": "1.4.2"
         },
-        "time": "2016-10-24 15:52:54",
+        "time": "2016-10-24T15:52:54+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1685,60 +1151,6 @@
         ]
     },
     {
-        "name": "rmrevin/yii2-fontawesome",
-        "version": "2.17.0",
-        "version_normalized": "2.17.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/rmrevin/yii2-fontawesome.git",
-            "reference": "470202eace1868f1f627bf8c4ce21a17b0548c4a"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/470202eace1868f1f627bf8c4ce21a17b0548c4a",
-            "reference": "470202eace1868f1f627bf8c4ce21a17b0548c4a",
-            "shasum": ""
-        },
-        "require": {
-            "fortawesome/font-awesome": "~4.7",
-            "php": ">=5.5.0",
-            "yiisoft/yii2": "2.0.*"
-        },
-        "time": "2016-10-25 15:14:55",
-        "type": "yii2-extension",
-        "extra": {
-            "asset-installer-paths": {
-                "npm-asset-library": "vendor/npm",
-                "bower-asset-library": "vendor/bower"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "rmrevin\\yii\\fontawesome\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Revin Roman",
-                "email": "roman@rmrevin.com",
-                "homepage": "https://rmrevin.com/"
-            }
-        ],
-        "description": "Asset Bundle for Yii2 with Font Awesome",
-        "keywords": [
-            "asset",
-            "awesome",
-            "bundle",
-            "font",
-            "yii"
-        ]
-    },
-    {
         "name": "maxwen/yii2-ckeditor-widget",
         "version": "1.0.3",
         "version_normalized": "1.0.3.0",
@@ -1758,7 +1170,7 @@
             "ckeditor/ckeditor": "dev-full/4.5.x",
             "yiisoft/yii2": "~2.0.0"
         },
-        "time": "2016-10-25 08:43:27",
+        "time": "2016-10-25T08:43:27+00:00",
         "type": "extension",
         "installation-source": "dist",
         "autoload": {
@@ -1797,7 +1209,7 @@
             "almasaeed2010/adminlte": "~2.0",
             "yiisoft/yii2": "~2.0.0"
         },
-        "time": "2016-10-20 03:38:18",
+        "time": "2016-10-20T03:38:18+00:00",
         "type": "extension",
         "installation-source": "dist",
         "autoload": {
@@ -1818,18 +1230,626 @@
         "description": "yii2 code generator with adminlte theme"
     },
     {
-        "name": "bower-asset/blueimp-load-image",
-        "version": "v2.8.1",
-        "version_normalized": "2.8.1.0",
+        "name": "yiisoft/yii2-composer",
+        "version": "2.0.5",
+        "version_normalized": "2.0.5.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/blueimp/JavaScript-Load-Image.git",
-            "reference": "406453f0a605e0b080dbae722e84b4c47a8f58f8"
+            "url": "https://github.com/yiisoft/yii2-composer.git",
+            "reference": "3f4923c2bde6caf3f5b88cc22fdd5770f52f8df2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/blueimp/JavaScript-Load-Image/zipball/406453f0a605e0b080dbae722e84b4c47a8f58f8",
-            "reference": "406453f0a605e0b080dbae722e84b4c47a8f58f8",
+            "url": "https://files.phpcomposer.com/files/yiisoft/yii2-composer/3f4923c2bde6caf3f5b88cc22fdd5770f52f8df2.zip",
+            "reference": "3f4923c2bde6caf3f5b88cc22fdd5770f52f8df2",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0"
+        },
+        "require-dev": {
+            "composer/composer": "^1.0"
+        },
+        "time": "2016-12-20T13:26:02+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "yii\\composer\\Plugin",
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\composer\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com"
+            }
+        ],
+        "description": "The composer plugin for Yii extension installer",
+        "keywords": [
+            "composer",
+            "extension installer",
+            "yii2"
+        ]
+    },
+    {
+        "name": "almasaeed2010/adminlte",
+        "version": "v2.3.11",
+        "version_normalized": "2.3.11.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/almasaeed2010/AdminLTE.git",
+            "reference": "2be703222af2edcb87e562d3da2299e4352bff8a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/almasaeed2010/AdminLTE/2be703222af2edcb87e562d3da2299e4352bff8a.zip",
+            "reference": "2be703222af2edcb87e562d3da2299e4352bff8a",
+            "shasum": ""
+        },
+        "time": "2017-01-08T21:03:57+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Abdullah Almsaeed",
+                "email": "abdullah@almsaeedstudio.com"
+            }
+        ],
+        "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 3",
+        "homepage": "http://almsaeedstudio.com/",
+        "keywords": [
+            "JS",
+            "admin",
+            "back-end",
+            "css",
+            "less",
+            "responsive",
+            "template",
+            "theme",
+            "web"
+        ]
+    },
+    {
+        "name": "ezyang/htmlpurifier",
+        "version": "v4.9.2",
+        "version_normalized": "4.9.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ezyang/htmlpurifier.git",
+            "reference": "6d50e5282afdfdfc3e0ff6d192aff56c5629b3d4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/ezyang/htmlpurifier/6d50e5282afdfdfc3e0ff6d192aff56c5629b3d4.zip",
+            "reference": "6d50e5282afdfdfc3e0ff6d192aff56c5629b3d4",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2"
+        },
+        "require-dev": {
+            "simpletest/simpletest": "^1.1"
+        },
+        "time": "2017-03-13T06:30:53+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "HTMLPurifier": "library/"
+            },
+            "files": [
+                "library/HTMLPurifier.composer.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Edward Z. Yang",
+                "email": "admin@htmlpurifier.org",
+                "homepage": "http://ezyang.com"
+            }
+        ],
+        "description": "Standards compliant HTML filter written in PHP",
+        "homepage": "http://htmlpurifier.org/",
+        "keywords": [
+            "html"
+        ]
+    },
+    {
+        "name": "bower-asset/jquery.inputmask",
+        "version": "3.3.4",
+        "version_normalized": "3.3.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/RobinHerbots/Inputmask.git",
+            "reference": "8a882bc471ba4077c4f8ecbe3d9d61c7558f3ef2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/RobinHerbots/Inputmask/zipball/8a882bc471ba4077c4f8ecbe3d9d61c7558f3ef2",
+            "reference": "8a882bc471ba4077c4f8ecbe3d9d61c7558f3ef2",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/jquery": ">=1.7"
+        },
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": [
+                "./dist/inputmask/inputmask.dependencyLib",
+                "./dist/inputmask/inputmask",
+                "./dist/inputmask/inputmask.extensions",
+                "./dist/inputmask/inputmask.date.extensions",
+                "./dist/inputmask/inputmask.numeric.extensions",
+                "./dist/inputmask/inputmask.phone.extensions",
+                "./dist/inputmask/inputmask.regex.extensions",
+                "./dist/inputmask/jquery.inputmask"
+            ],
+            "bower-asset-ignore": [
+                "**/*",
+                "!dist/*",
+                "!dist/inputmask/*",
+                "!dist/min/*",
+                "!dist/min/inputmask/*",
+                "!extra/bindings/*",
+                "!extra/dependencyLibs/*",
+                "!extra/phone-codes/*"
+            ]
+        },
+        "installation-source": "dist",
+        "license": [
+            "http://opensource.org/licenses/mit-license.php"
+        ],
+        "description": "jquery.inputmask is a jquery plugin which create an input mask.",
+        "keywords": [
+            "form",
+            "input",
+            "inputmask",
+            "jquery",
+            "mask",
+            "plugins"
+        ]
+    },
+    {
+        "name": "yiisoft/yii2",
+        "version": "2.0.11.2",
+        "version_normalized": "2.0.11.2",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-framework.git",
+            "reference": "ee996adec1dfd7babb67bd0c604f5bd6425fe5ab"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/yiisoft/yii2-framework/ee996adec1dfd7babb67bd0c604f5bd6425fe5ab.zip",
+            "reference": "ee996adec1dfd7babb67bd0c604f5bd6425fe5ab",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/jquery": "2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
+            "bower-asset/jquery.inputmask": "~3.2.2 | ~3.3.3",
+            "bower-asset/punycode": "1.3.*",
+            "bower-asset/yii2-pjax": "~2.0.1",
+            "cebe/markdown": "~1.0.0 | ~1.1.0",
+            "ext-ctype": "*",
+            "ext-mbstring": "*",
+            "ezyang/htmlpurifier": "~4.6",
+            "lib-pcre": "*",
+            "php": ">=5.4.0",
+            "yiisoft/yii2-composer": "~2.0.4"
+        },
+        "time": "2017-02-08T09:04:32+00:00",
+        "bin": [
+            "yii"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com",
+                "homepage": "http://www.yiiframework.com/",
+                "role": "Founder and project lead"
+            },
+            {
+                "name": "Alexander Makarov",
+                "email": "sam@rmcreative.ru",
+                "homepage": "http://rmcreative.ru/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Maurizio Domba",
+                "homepage": "http://mdomba.info/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Carsten Brandt",
+                "email": "mail@cebe.cc",
+                "homepage": "http://cebe.cc/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Timur Ruziev",
+                "email": "resurtm@gmail.com",
+                "homepage": "http://resurtm.com/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Paul Klimov",
+                "email": "klimov.paul@gmail.com",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Dmitry Naumenko",
+                "email": "d.naumenko.a@gmail.com",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Boudewijn Vahrmeijer",
+                "email": "info@dynasource.eu",
+                "homepage": "http://dynasource.eu",
+                "role": "Core framework development"
+            }
+        ],
+        "description": "Yii PHP Framework Version 2",
+        "homepage": "http://www.yiiframework.com/",
+        "keywords": [
+            "framework",
+            "yii2"
+        ]
+    },
+    {
+        "name": "rmrevin/yii2-fontawesome",
+        "version": "2.17.1",
+        "version_normalized": "2.17.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/rmrevin/yii2-fontawesome.git",
+            "reference": "65ce306da864f4d558348aeba040ed7876878090"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/rmrevin/yii2-fontawesome/65ce306da864f4d558348aeba040ed7876878090.zip",
+            "reference": "65ce306da864f4d558348aeba040ed7876878090",
+            "shasum": ""
+        },
+        "require": {
+            "fortawesome/font-awesome": "~4.7",
+            "php": ">=5.4.0",
+            "yiisoft/yii2": "2.0.*"
+        },
+        "time": "2017-01-11T14:05:47+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "asset-installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "rmrevin\\yii\\fontawesome\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Revin Roman",
+                "email": "roman@rmrevin.com",
+                "homepage": "https://rmrevin.com/"
+            }
+        ],
+        "description": "Asset Bundle for Yii2 with Font Awesome",
+        "keywords": [
+            "asset",
+            "awesome",
+            "bundle",
+            "font",
+            "yii"
+        ]
+    },
+    {
+        "name": "studio-42/elfinder",
+        "version": "2.1.22",
+        "version_normalized": "2.1.22.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Studio-42/elFinder.git",
+            "reference": "a41ea2f9640b6a7415d438568c708e9bcfc2e653"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/Studio-42/elFinder/a41ea2f9640b6a7415d438568c708e9bcfc2e653.zip",
+            "reference": "a41ea2f9640b6a7415d438568c708e9bcfc2e653",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2"
+        },
+        "suggest": {
+            "barryvdh/elfinder-flysystem-driver": "VolumeDriver for elFinder to use Flysystem as a root.",
+            "dropbox-php/dropbox-php": "elFinder Volume driver `Dropbox` require `dropbox-php/dropbox-php`.",
+            "nao-pon/flysystem-google-drive": "require in GoogleDrive network volume mounting.",
+            "pear/http_oauth": "dropbox-php require `pear/http_oauth` or `PHP OAuth extension`."
+        },
+        "time": "2017-02-24T15:28:23+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Dmitry Levashov",
+                "email": "dio@std42.ru",
+                "homepage": "http://std42.ru"
+            },
+            {
+                "name": "Troex Nevelin",
+                "email": "troex@fury.scancode.ru",
+                "homepage": "http://std42.ru"
+            },
+            {
+                "name": "Naoki Sawada",
+                "email": "hypweb@gmail.com",
+                "homepage": "http://xoops.hypweb.net"
+            },
+            {
+                "name": "Community contributions",
+                "homepage": "https://github.com/Studio-42/elFinder/contributors"
+            }
+        ],
+        "description": "File manager for web",
+        "homepage": "http://elfinder.org"
+    },
+    {
+        "name": "mihaildev/yii2-elfinder",
+        "version": "1.2.2",
+        "version_normalized": "1.2.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/MihailDev/yii2-elfinder.git",
+            "reference": "fe5a9f87daae6511d28aec74fd6b4b94b1a6964e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/MihailDev/yii2-elfinder/fe5a9f87daae6511d28aec74fd6b4b94b1a6964e.zip",
+            "reference": "fe5a9f87daae6511d28aec74fd6b4b94b1a6964e",
+            "shasum": ""
+        },
+        "require": {
+            "studio-42/elfinder": "^2.1.10",
+            "yiisoft/yii2-jui": "*"
+        },
+        "time": "2017-01-06T23:35:14+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "asset-installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "mihaildev\\elfinder\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Mihail",
+                "email": "mihail.kucher@gmail.com",
+                "homepage": "https://github.com/MihailDev",
+                "role": "Developer"
+            }
+        ],
+        "description": "Yii2 ElFinder",
+        "homepage": "https://github.com/MihailDev/yii2-elfinder",
+        "keywords": [
+            "elfinder",
+            "filemanager",
+            "yii"
+        ]
+    },
+    {
+        "name": "yiisoft/yii2-debug",
+        "version": "2.0.9",
+        "version_normalized": "2.0.9.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-debug.git",
+            "reference": "647be6c9d48dc2f3c2e2f33b9eba0a4ca78abde9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/yiisoft/yii2-debug/647be6c9d48dc2f3c2e2f33b9eba0a4ca78abde9.zip",
+            "reference": "647be6c9d48dc2f3c2e2f33b9eba0a4ca78abde9",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2": "~2.0.11",
+            "yiisoft/yii2-bootstrap": "~2.0.0"
+        },
+        "time": "2017-02-21T10:30:50+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\debug\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com"
+            }
+        ],
+        "description": "The debugger extension for the Yii framework",
+        "keywords": [
+            "debug",
+            "debugger",
+            "yii2"
+        ]
+    },
+    {
+        "name": "swiftmailer/swiftmailer",
+        "version": "v5.4.6",
+        "version_normalized": "5.4.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/swiftmailer/swiftmailer.git",
+            "reference": "81fdccfaf8bdc5d5d7a1ef6bb3a61bbb1a6c4a3e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/swiftmailer/swiftmailer/81fdccfaf8bdc5d5d7a1ef6bb3a61bbb1a6c4a3e.zip",
+            "reference": "81fdccfaf8bdc5d5d7a1ef6bb3a61bbb1a6c4a3e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "mockery/mockery": "~0.9.1",
+            "symfony/phpunit-bridge": "~3.2"
+        },
+        "time": "2017-02-13T07:52:53+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "5.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "lib/swift_required.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Chris Corbyn"
+            },
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            }
+        ],
+        "description": "Swiftmailer, free feature-rich PHP mailer",
+        "homepage": "http://swiftmailer.org",
+        "keywords": [
+            "email",
+            "mail",
+            "mailer"
+        ]
+    },
+    {
+        "name": "bower-asset/blueimp-canvas-to-blob",
+        "version": "v3.7.0",
+        "version_normalized": "3.7.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/blueimp/JavaScript-Canvas-to-Blob.git",
+            "reference": "10f6200baea6c7818f898a182760690d6d2c1cde"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/blueimp/JavaScript-Canvas-to-Blob/zipball/10f6200baea6c7818f898a182760690d6d2c1cde",
+            "reference": "10f6200baea6c7818f898a182760690d6d2c1cde",
+            "shasum": ""
+        },
+        "type": "bower-asset-library",
+        "installation-source": "dist"
+    },
+    {
+        "name": "bower-asset/blueimp-load-image",
+        "version": "v2.12.2",
+        "version_normalized": "2.12.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/blueimp/JavaScript-Load-Image.git",
+            "reference": "caf36d45d843b38b8763cb4a921d7ce51681a08c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/blueimp/JavaScript-Load-Image/zipball/caf36d45d843b38b8763cb4a921d7ce51681a08c",
+            "reference": "caf36d45d843b38b8763cb4a921d7ce51681a08c",
+            "shasum": ""
+        },
+        "type": "bower-asset-library",
+        "installation-source": "dist"
+    },
+    {
+        "name": "bower-asset/blueimp-tmpl",
+        "version": "v3.8.0",
+        "version_normalized": "3.8.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/blueimp/JavaScript-Templates.git",
+            "reference": "dc7631396cd541db5644aa2c651e342c68511aad"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/blueimp/JavaScript-Templates/zipball/dc7631396cd541db5644aa2c651e342c68511aad",
+            "reference": "dc7631396cd541db5644aa2c651e342c68511aad",
             "shasum": ""
         },
         "type": "bower-asset-library",
@@ -1837,17 +1857,17 @@
     },
     {
         "name": "bower-asset/blueimp-file-upload",
-        "version": "v9.13.1",
-        "version_normalized": "9.13.1.0",
+        "version": "v9.17.0",
+        "version_normalized": "9.17.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/blueimp/jQuery-File-Upload.git",
-            "reference": "6906d8dbf9e3c0dc2f2f67868f25f4bddd461eb5"
+            "reference": "aaeb8c38e9dc87b02e672f57658c4111943ac44b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/blueimp/jQuery-File-Upload/zipball/6906d8dbf9e3c0dc2f2f67868f25f4bddd461eb5",
-            "reference": "6906d8dbf9e3c0dc2f2f67868f25f4bddd461eb5",
+            "url": "https://api.github.com/repos/blueimp/jQuery-File-Upload/zipball/aaeb8c38e9dc87b02e672f57658c4111943ac44b",
+            "reference": "aaeb8c38e9dc87b02e672f57658c4111943ac44b",
             "shasum": ""
         },
         "require": {

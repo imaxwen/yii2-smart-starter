@@ -21,15 +21,6 @@ return array (
       '@yii/bootstrap' => $vendorDir . '/yiisoft/yii2-bootstrap',
     ),
   ),
-  'yiisoft/yii2-debug' => 
-  array (
-    'name' => 'yiisoft/yii2-debug',
-    'version' => '2.0.6.0',
-    'alias' => 
-    array (
-      '@yii/debug' => $vendorDir . '/yiisoft/yii2-debug',
-    ),
-  ),
   'yiisoft/yii2-gii' => 
   array (
     'name' => 'yiisoft/yii2-gii',
@@ -111,15 +102,6 @@ return array (
       '@yii/jui' => $vendorDir . '/yiisoft/yii2-jui',
     ),
   ),
-  'mihaildev/yii2-elfinder' => 
-  array (
-    'name' => 'mihaildev/yii2-elfinder',
-    'version' => '1.2.1.0',
-    'alias' => 
-    array (
-      '@mihaildev/elfinder' => $vendorDir . '/mihaildev/yii2-elfinder',
-    ),
-  ),
   'dmstr/yii2-adminlte-asset' => 
   array (
     'name' => 'dmstr/yii2-adminlte-asset',
@@ -132,10 +114,28 @@ return array (
   'rmrevin/yii2-fontawesome' => 
   array (
     'name' => 'rmrevin/yii2-fontawesome',
-    'version' => '2.17.0.0',
+    'version' => '2.17.1.0',
     'alias' => 
     array (
       '@rmrevin/yii/fontawesome' => $vendorDir . '/rmrevin/yii2-fontawesome',
+    ),
+  ),
+  'mihaildev/yii2-elfinder' => 
+  array (
+    'name' => 'mihaildev/yii2-elfinder',
+    'version' => '1.2.2.0',
+    'alias' => 
+    array (
+      '@mihaildev/elfinder' => $vendorDir . '/mihaildev/yii2-elfinder',
+    ),
+  ),
+  'yiisoft/yii2-debug' => 
+  array (
+    'name' => 'yiisoft/yii2-debug',
+    'version' => '2.0.9.0',
+    'alias' => 
+    array (
+      '@yii/debug' => $vendorDir . '/yiisoft/yii2-debug',
     ),
   ),
 );
