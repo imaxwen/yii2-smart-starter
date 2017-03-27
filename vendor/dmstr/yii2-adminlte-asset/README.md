@@ -1,6 +1,11 @@
 AdminLTE Asset Bundle
 =====================
 
+[![Latest Stable Version](https://poser.pugx.org/dmstr/yii2-adminlte-asset/v/stable.svg)](https://packagist.org/packages/dmstr/yii2-adminlte-asset) 
+[![Total Downloads](https://poser.pugx.org/dmstr/yii2-adminlte-asset/downloads.svg)](https://packagist.org/packages/dmstr/yii2-adminlte-asset)
+[![License](https://poser.pugx.org/dmstr/yii2-adminlte-asset/license.svg)](https://packagist.org/packages/dmstr/yii2-adminlte-asset)
+
+
 *Backend UI for Yii2 Framework, based on [AdminLTE](https://github.com/almasaeed2010/AdminLTE)*
 
 !["Yii2 AdminLTE Presentation"](https://cloud.githubusercontent.com/assets/874234/7603896/753228ee-f943-11e4-9d42-2a31b41eb42d.jpg)
@@ -35,7 +40,7 @@ Quick Start
 
 Once the extension is installed, you can have a **preview** by reconfiguring the path mappings of the view component:
 
-For Yii 2 [Application Template](https://github.com/yiisoft/yii2-app-advanced) or [Basic Application Template](https://github.com/yiisoft/yii2-app-basic)
+For Yii 2 [Advanced Application Template](https://github.com/yiisoft/yii2-app-advanced) or [Basic Application Template](https://github.com/yiisoft/yii2-app-basic)
 
 ```php
 'components' => [
@@ -50,7 +55,7 @@ For Yii 2 [Application Template](https://github.com/yiisoft/yii2-app-advanced) o
 ```
 
 
-For [Phundament 4](https://github.com/phundament/app)
+For [phd5](https://github.com/dmstr/phd5-app) application
 
 ```php
 'components' => [
@@ -75,6 +80,36 @@ Customization
 - Copy files from `vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app` (or other theme) to `@app/views`.
 - Remove the custom `view` configuration from your application by deleting the path mappings, if you have made them before.
 - Edit your views adhering to html markup `vendor/almasaeed2010/adminlte/pages`
+
+### AdminLTE Plugins
+
+Assets for [AdminLTE plugins](https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html#plugins) are not included
+in our `AdminLteAsset` but you can find these files in your vendor directory under `vendor/almasaeed2010/adminlte/plugins`.
+So if you want to use any of them we recommend to create a custom bundle where you list the plugin files you need:
+
+
+```php
+use yii\web\AssetBundle;
+class AdminLtePluginAsset extends AssetBundle
+{
+    public $sourcePath = '@vendor/almasaeed2010/adminlte/plugins';
+    public $js = [
+        'datatables/dataTables.bootstrap.min.js',
+        // more plugin Js here
+    ];
+    public $css = [
+        'datatables/dataTables.bootstrap.css',
+        // more plugin CSS here
+    ];
+    public $depends = [
+        'dmstr\web\AdminLteAsset',
+    ];
+}
+```
+
+As this asset depends on our `AdminLteAsset` it's the only asset you have to register, for example in
+your `main.php` layout file.
+
 
 ### Skins
 

@@ -16,13 +16,20 @@ class Menu extends \yii\widgets\Menu
     public $linkTemplate = '<a href="{url}">{icon} {label}</a>';
     public $submenuTemplate = "\n<ul class='treeview-menu' {show}>\n{items}\n</ul>\n";
     public $activateParents = true;
+    public $defaultIconHtml = '<i class="fa fa-circle-o"></i> ';
+
+    /**
+     * @var string
+     */
+    public static $iconClassPrefix = 'fa fa-';
+
     /**
      * @inheritdoc
      */
     protected function renderItem($item)
     {
         if(isset($item['items'])) {
-            $labelTemplate = '<a href="{url}">{label} <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>';
+            $labelTemplate = '<a href="{url}">{icon} {label} <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>';
             $linkTemplate = '<a href="{url}">{icon} {label} <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>';
         }
         else {
@@ -35,20 +42,21 @@ class Menu extends \yii\widgets\Menu
             $replace = !empty($item['icon']) ? [
                 '{url}' => Url::to($item['url']),
                 '{label}' => '<span>'.$item['label'].'</span>',
-                '{icon}' => '<i class="' . $item['icon'] . '"></i> '
+                '{icon}' => '<i class="' . self::$iconClassPrefix . $item['icon'] . '"></i> '
             ] : [
                 '{url}' => Url::to($item['url']),
                 '{label}' => '<span>'.$item['label'].'</span>',
-                '{icon}' => null,
+                '{icon}' => $this->defaultIconHtml,
             ];
             return strtr($template, $replace);
         } else {
             $template = ArrayHelper::getValue($item, 'template', $labelTemplate);
             $replace = !empty($item['icon']) ? [
                 '{label}' => '<span>'.$item['label'].'</span>',
-                '{icon}' => '<i class="' . $item['icon'] . '"></i> '
+                '{icon}' => '<i class="' . self::$iconClassPrefix . $item['icon'] . '"></i> '
             ] : [
                 '{label}' => '<span>'.$item['label'].'</span>',
+                '{icon}' => $this->defaultIconHtml
             ];
             return strtr($template, $replace);
         }
