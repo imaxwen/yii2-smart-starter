@@ -35,7 +35,7 @@ return [
 			],
 		],
 		'authManager' => [
-			'class' => 'yii\rbac\DbManager', // 使用数据库管理配置文件
+			'class' => 'yii\rbac\DbManager',
 			'defaultRoles' => ['guest'],
 		],
 
@@ -59,9 +59,8 @@ return [
 		'allowActions' => [
 			'site/*', //sites for access
 			'debug/*',
-			'ckeditor/*', // add your rbac rules if you nedd
-			'elfinder/*', // add your rbac rules if you nedd
-			'authuser/*'
+			'ckeditor/*',
+			'elfinder/*',
 		]
 	],
     'params' => $params,
